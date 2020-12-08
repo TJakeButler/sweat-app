@@ -5,59 +5,71 @@
       "password": "pw",
       "name": "Jake Butler",
       "id": 1
+    },
+    {
+      "email": "bubba@gmail.com",
+      "password": "pw",
+      "name": "Bubba Gump",
+      "id": 2
     }
   ],
-
-  "exerciseType": [
-  {
-    "id": 1,
-    "exerciseType": "Push Ups",
-    "userId": 1
-  }
+  "exerciseTypes": [
+    {
+      "id": 1,
+      "name": "Push Ups",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Pull Ups",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "name": "Sit Ups",
+      "userId": 1
+    }
   ],
-
   "effort": [
-  {
-    "id": 1,
-    "description": "This was lowest effort possible"
-  },
-  {
-    "id": 2,
-    "description": "This was low effort"
-  },
-  {
-    "id": 3,
-    "description": "I just wasn't feeling it today"
-  },
-  {
-    "id": 4,
-    "description": "This was less than average"
-  },
-  {
-    "id": 5,
-    "description": "This was just alright"
-  },
-  {
-    "id": 6,
-    "description": "This was pretty good"
-  },
-  {
-    "id": 7,
-    "description": "This was above average"
-  },
-  {
-    "id": 8,
-    "description": "This was a really good workout"
-  },
-  {
-    "id": 9,
-    "description": "I felt great!"
-  },
-  {
-    "id": 10,
-    "description": "Best Effot Possible!"
-  }
-  
+    {
+      "id": 1,
+      "description": "This was lowest effort possible"
+    },
+    {
+      "id": 2,
+      "description": "This was low effort"
+    },
+    {
+      "id": 3,
+      "description": "I just wasn't feeling it today"
+    },
+    {
+      "id": 4,
+      "description": "This was less than average"
+    },
+    {
+      "id": 5,
+      "description": "This was just alright"
+    },
+    {
+      "id": 6,
+      "description": "This was pretty good"
+    },
+    {
+      "id": 7,
+      "description": "This was above average"
+    },
+    {
+      "id": 8,
+      "description": "This was a really good workout"
+    },
+    {
+      "id": 9,
+      "description": "I felt great!"
+    },
+    {
+      "id": 10,
+      "description": "Best Effot Possible!"
+    }
   ]
 }
-
