@@ -17,7 +17,7 @@ export const ExerciseLogList = () => {
   return (
     <div className="">
       {
-        exerciseLogs.map(singeExerciseLog => <ExerciseLog key={exerciseLogs.id} ExerciseLogObj={singeExerciseLog} />)
+        exerciseLogs.map(singeExerciseLog => <ExerciseLog key={singeExerciseLog.id} ExerciseLogObj={singeExerciseLog} />)
       }
     </div>
   )
