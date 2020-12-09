@@ -7,8 +7,7 @@ import {Route} from "react-router-dom"
 import { ExerciseLogProvider } from './exerciseLog/ExerciseLogProvider'
 import { ExerciseLogList } from './exerciseLog/ExerciseLogList'
 
-
-
+import {ExerciseTypeForm} from './exercise/ExerciseTypeForm'
 
 
 export const ApplicationViews = (props) => {
@@ -34,6 +33,12 @@ export const ApplicationViews = (props) => {
                 <ExerciseLogList></ExerciseLogList>
             </Route>
         </ExerciseLogProvider>
+
+        
+        <Route path="/form">
+            <ExerciseTypeForm ></ExerciseTypeForm>
+        </Route>
+        
         </>
     )
 }
