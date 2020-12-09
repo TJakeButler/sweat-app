@@ -11,7 +11,7 @@ export const ExerciseTypeContext = React.createContext()
  This component establishes what data can be used.
  */
 export const ExerciseTypeProvider = (props) => {
-    const [exerciseTypes, setExerciseTypes] = useState([])
+    const [exerciseTypes, setExerciseTypes] = useState([]) // Inital value of state variable, a function to set the value of the state variable.
 
     const getExerciseTypes = () => {
         return fetch("http://localhost:8088/exerciseTypes")

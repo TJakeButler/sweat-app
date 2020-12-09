@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react"
-// import { Customer } from "./Customer"
+import { ExerciseType } from "./ExerciseType"
 import { ExerciseTypeContext } from "./ExeriseTypeProvider"
 
 export const ExerciseTypeList = () => {

@@ -4,6 +4,7 @@ import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
 // import { ExerciseTypeContext } from "./components/exercise/ExeriseType"
 import { NavBar } from "./components/nav/NavBar"
+import { ApplicationViews } from "./components/ApplicationViews"
 
 
 
@@ -18,6 +19,7 @@ export const Sweat = () => {
               return (
                   <>
                         <Route render={props => <NavBar {...props} />} />
+                        <Route render={props => <ApplicationViews {...props} />} />
                     </>
                 )
             } else {
