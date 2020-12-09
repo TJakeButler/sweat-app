@@ -4,6 +4,10 @@ import {ExerciseTypeList} from "./exercise/ExeriseTypeList"
 import {Route} from "react-router-dom"
 
 
+import { ExerciseLogProvider } from './exerciseLog/ExerciseLogProvider'
+import { ExerciseLogList } from './exerciseLog/ExerciseLogList'
+
+
 
 
 
@@ -24,6 +28,12 @@ export const ApplicationViews = (props) => {
                 </Route>
             </ExerciseTypeProvider>
         
+
+        <ExerciseLogProvider>
+            <Route path="/exerciseLogs">
+                <ExerciseLogList></ExerciseLogList>
+            </Route>
+        </ExerciseLogProvider>
         </>
     )
 }
