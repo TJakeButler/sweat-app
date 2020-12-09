@@ -13,7 +13,7 @@ export const ApplicationViews = (props) => {
             
                 {/* Render the location list when http://localhost:3000/ */}
                 <Route exact path="/">
-                    <Sweat />
+                    You're at the Home Page!
                 </Route>
             
 
