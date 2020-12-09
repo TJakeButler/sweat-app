@@ -5,59 +5,107 @@
       "password": "pw",
       "name": "Jake Butler",
       "id": 1
+    },
+    {
+      "email": "bubba@gmail.com",
+      "password": "pw",
+      "name": "Bubba Gump",
+      "id": 2
     }
   ],
 
-  "exerciseType": [
-  {
-    "id": 1,
-    "exerciseType": "Push Ups",
-    "userId": 1
-  }
+  "exerciseLogs": [
+    {
+      "id": 1,
+      "userId": 1,
+      "exerciseTypeId": 1,
+      "sets": 10,
+      "weight": 150,
+      "effortId": 10,
+      "attitude": "I worked really hard today!",
+      "workoutTime": 15,
+      "date": "2020-12-09"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "exerciseTypeId": 2,
+      "sets": 5,
+      "weight": 255,
+      "effortId": 6,
+      "attitude": "I wasn't really feeling it today.",
+      "workoutTime": 10,
+      "date": "2020-12-12"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "exerciseTypeId": 3,
+      "sets": 3,
+      "weight": 253,
+      "effortId": 8,
+      "attitude": "I felt tood today, working harder.",
+      "workoutTime": 15,
+      "date": "2020-12-13"
+    }
   ],
-
+  "exerciseTypes": [
+    {
+      "id": 1,
+      "name": "Push Ups",
+      "userId": 1
+    },
+    {
+      "id": 2,
+      "name": "Pull Ups",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "name": "Sit Ups",
+      "userId": 1
+    }
+  ],
   "effort": [
-  {
-    "id": 1,
-    "description": "This was lowest effort possible"
-  },
-  {
-    "id": 2,
-    "description": "This was low effort"
-  },
-  {
-    "id": 3,
-    "description": "I just wasn't feeling it today"
-  },
-  {
-    "id": 4,
-    "description": "This was less than average"
-  },
-  {
-    "id": 5,
-    "description": "This was just alright"
-  },
-  {
-    "id": 6,
-    "description": "This was pretty good"
-  },
-  {
-    "id": 7,
-    "description": "This was above average"
-  },
-  {
-    "id": 8,
-    "description": "This was a really good workout"
-  },
-  {
-    "id": 9,
-    "description": "I felt great!"
-  },
-  {
-    "id": 10,
-    "description": "Best Effot Possible!"
-  }
-  
+    {
+      "id": 1,
+      "description": "This was lowest effort possible"
+    },
+    {
+      "id": 2,
+      "description": "This was low effort"
+    },
+    {
+      "id": 3,
+      "description": "I just wasn't feeling it today"
+    },
+    {
+      "id": 4,
+      "description": "This was less than average"
+    },
+    {
+      "id": 5,
+      "description": "This was just alright"
+    },
+    {
+      "id": 6,
+      "description": "This was pretty good"
+    },
+    {
+      "id": 7,
+      "description": "This was above average"
+    },
+    {
+      "id": 8,
+      "description": "This was a really good workout"
+    },
+    {
+      "id": 9,
+      "description": "I felt great!"
+    },
+    {
+      "id": 10,
+      "description": "Best Effot Possible!"
+    }
   ]
 }
-
