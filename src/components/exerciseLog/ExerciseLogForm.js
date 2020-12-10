@@ -14,7 +14,6 @@ const onSubmit = (data) => {
     data["effortId"] = parseInt(data.effortId)
     data["workoutTime"] = parseInt(data.workoutTime)
     
-    
     addExerciseLog(data)
     console.log(data)
 }
@@ -28,7 +27,7 @@ const onSubmit = (data) => {
             <input type="text" placeholder="Effort" name="effortId" ref={register}/>
             <input type="text" placeholder="Attitude" name="attitude" ref={register}/>
             <input type="text" placeholder="Time" name="workoutTime" ref={register}/>
-            <input type="hidden" value={new Date} name="date" ref={register}/>
+            <input type="hidden" value={new Date().toLocaleDateString('en-US')} name="date" ref={register}/>
 
             {/* ${new Date(newsObj.timestamp).toLocaleDateString('en-US')} */}
             <input type="hidden" name="userId" value={localStorage.getItem("app_user_id")} ref={register}/>

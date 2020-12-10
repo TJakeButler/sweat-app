@@ -19,38 +19,7 @@
       "id": 3
     }
   ],
-  "exerciseLogs": [
-    {
-      "sets": 10,
-      "weight": 150,
-      "effortId": 10,
-      "attitude": "Great!",
-      "workoutTime": 30,
-      "date": "Thu Dec 10 2020 14:07:55 GMT-0600 (Central Standard Time)",
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "sets": 20,
-      "weight": 160,
-      "effortId": 9,
-      "attitude": "great",
-      "workoutTime": 30,
-      "date": "Thu Dec 10 2020 14:17:07 GMT-0600 (Central Standard Time)",
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "sets": 10,
-      "weight": 150,
-      "effortId": 10,
-      "attitude": "bad",
-      "workoutTime": 30,
-      "date": "Thu Dec 10 2020 14:19:57 GMT-0600 (Central Standard Time)",
-      "userId": 1,
-      "id": 3
-    }
-  ],
+  "exerciseLogs": [],
   "exerciseTypes": [
     {
       "name": "Squat",
@@ -66,6 +35,11 @@
       "name": "Sprints",
       "userId": 1,
       "id": 3
+    },
+    {
+      "name": "laksjfaldkfsj",
+      "userId": 1,
+      "id": 4
     }
   ],
   "effort": [
