@@ -56,29 +56,34 @@
   ],
   "exerciseTypes": [
     {
-      "id": 1,
-      "name": "Push Ups",
-      "userId": 1
+      "name": "Squat",
+      "userId": 1,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Pull Ups",
-      "userId": 1
+      "name": "Pull Up",
+      "userId": 1,
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "Sit Ups",
-      "userId": 1
+      "name": "Dip",
+      "userId": 1,
+      "id": 3
     },
     {
-      "name": "Hill Sprints",
-      "userId": "1",
+      "name": "Burpee",
+      "userId": 2,
       "id": 4
     },
     {
-      "name": "alsdfkjalksdfjs",
-      "userId": 1,
+      "name": "Jumping Jacks",
+      "userId": 2,
       "id": 5
+    },
+    {
+      "name": "Yoga",
+      "userId": 1,
+      "id": 6
     }
   ],
   "effort": [

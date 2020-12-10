@@ -15,7 +15,10 @@ export const NavBar = (props) => {
                 <Link className="navbar__link" to="/exerciseLogs">Exercise Log</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/form">Create New Exercise</Link>
+                <Link className="navbar__link" to="/newExerciseTypeform">Create New Exercise</Link>
+            </li>
+            <li className="navbar__item">
+                <Link className="navbar__link" to="/newExerciseLogform">Log New Exercise</Link>
             </li>
         </ul>
     )
