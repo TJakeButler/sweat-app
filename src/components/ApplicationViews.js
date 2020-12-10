@@ -16,7 +16,7 @@ export const ApplicationViews = (props) => {
             
                 {/* Render the location list when http://localhost:3000/ */}
                 <Route exact path="/">
-                    You're at the Home Page!
+                    <h1>You're at the Home Page!</h1>
                 </Route>
             
 
@@ -34,11 +34,11 @@ export const ApplicationViews = (props) => {
             </Route>
         </ExerciseLogProvider>
 
-        
+        <ExerciseTypeProvider>
         <Route path="/form">
             <ExerciseTypeForm ></ExerciseTypeForm>
         </Route>
-        
+        </ExerciseTypeProvider>
         </>
     )
 }
