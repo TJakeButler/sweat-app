@@ -1,7 +1,11 @@
-import React from "react"
+import React, {useContext} from "react"
+import {ExerciseLogContext} from "./ExerciseLogProvider"
 
 
-export const ExerciseLog = ({ ExerciseLogObj }) => (
+export const ExerciseLog = ({ ExerciseLogObj }) => {
+  const {deleteExercise} = useContext(ExerciseLogContext)
+   
+  return <>
   <section className="">
     <h3 className="">Exercise Log ID:{ExerciseLogObj.id}</h3>
 <div className="">UserId:{ExerciseLogObj.userId}</div>
@@ -11,5 +15,14 @@ export const ExerciseLog = ({ ExerciseLogObj }) => (
 <div className="">Effort ID: {ExerciseLogObj.effortId}</div>
 <div className="">Minutes:{ExerciseLogObj.workoutTime}</div>
 <div className="">Date:{ExerciseLogObj.date}</div>
+<button className="btn--release"
+        onClick={() => {
+            deleteExercise(ExerciseLogObj.id)
+            .then(() => {
+              // ExerciseLogObj.history.push("/exerciseLogs")
+            })
+        }}
+>Delete Exercise</button>
   </section>
-)
+  </>
+      }
