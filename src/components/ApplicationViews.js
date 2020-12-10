@@ -41,11 +41,11 @@ export const ApplicationViews = (props) => {
         </Route>
         </ExerciseTypeProvider>
 
-        
+        <ExerciseLogProvider >
         <Route path="/newExerciseLogform">
             <ExerciseLogForm ></ExerciseLogForm>
         </Route>
-        
+        </ExerciseLogProvider>
         </>
     )
 }

@@ -20,6 +20,7 @@ const {register, handleSubmit } = useForm();
 const onSubmit = data => {
     data["userId"] = parseInt(data.userId)
     addExerciseType(data)
+    console.log(data)
 }
     
 return (
