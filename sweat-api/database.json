@@ -11,9 +11,14 @@
       "password": "pw",
       "name": "Bubba Gump",
       "id": 2
+    },
+    {
+      "email": "dan@gmail.com",
+      "password": "pw",
+      "name": "Dan Mcguire",
+      "id": 3
     }
   ],
-
   "exerciseLogs": [
     {
       "id": 1,
@@ -64,6 +69,16 @@
       "id": 3,
       "name": "Sit Ups",
       "userId": 1
+    },
+    {
+      "name": "Hill Sprints",
+      "userId": "1",
+      "id": 4
+    },
+    {
+      "name": "alsdfkjalksdfjs",
+      "userId": 1,
+      "id": 5
     }
   ],
   "effort": [
