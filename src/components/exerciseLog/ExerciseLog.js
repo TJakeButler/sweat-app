@@ -12,7 +12,7 @@ export const ExerciseLog = ({ ExerciseLogObj }) => {
 <div className="">ExerciseType ID:{ExerciseLogObj.exerciseTypeId}</div>
 <div className="">Sets:{ExerciseLogObj.sets}</div>
 <div className="">Weight:{ExerciseLogObj.weight}</div>
-<div className="">Effort ID: {ExerciseLogObj.effortId}</div>
+<div className="">Effort: {ExerciseLogObj.effort}</div>
 <div className="">Minutes:{ExerciseLogObj.workoutTime}</div>
 <div className="">Date:{ExerciseLogObj.date}</div>
 <button className="btn--release"

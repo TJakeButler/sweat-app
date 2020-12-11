@@ -21,44 +21,34 @@
   ],
   "exerciseLogs": [
     {
-      "sets": 20,
+      "sets": 10,
       "weight": 150,
-      "effortId": 7,
-      "attitude": "Not that good",
-      "workoutTime": 25,
+      "effort": "Best Effot Possible!",
+      "attitude": "I'm a baller",
+      "workoutTime": 30,
       "date": "12/11/2020",
       "userId": 1,
-      "id": 4
-    },
-    {
-      "sets": 15,
-      "weight": 149,
-      "effortId": 6,
-      "attitude": "Ok....",
-      "workoutTime": 10,
-      "date": "12/11/2020",
-      "userId": 1,
-      "id": 5
+      "id": 1
     },
     {
       "sets": 10,
       "weight": 150,
-      "effortId": 9,
-      "attitude": "Great!",
+      "effort": "This was above average",
+      "attitude": "GREAT!",
       "workoutTime": 30,
       "date": "12/11/2020",
-      "userId": 2,
-      "id": 6
+      "userId": 1,
+      "id": 2
     },
     {
       "sets": null,
       "weight": null,
-      "effortId": null,
+      "effort": "0",
       "attitude": "",
       "workoutTime": null,
       "date": "12/11/2020",
-      "userId": 2,
-      "id": 7
+      "userId": 1,
+      "id": 3
     }
   ],
   "exerciseTypes": [
@@ -81,6 +71,16 @@
       "name": "hand stand push ups",
       "userId": 1,
       "id": 8
+    },
+    {
+      "name": "Stuff!",
+      "userId": 1,
+      "id": 9
+    },
+    {
+      "name": "LJALKJFDS",
+      "userId": 1,
+      "id": 10
     }
   ],
   "effort": [
