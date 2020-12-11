@@ -71,6 +71,16 @@
       "name": "Eating Pizza",
       "userId": 2,
       "id": 6
+    },
+    {
+      "name": "New Exercise",
+      "userId": 2,
+      "id": 7
+    },
+    {
+      "name": "hand stand push ups",
+      "userId": 1,
+      "id": 8
     }
   ],
   "effort": [

@@ -23,6 +23,7 @@ export const ExerciseLogList = () => {
   return (
 
     <>
+    <h1>Exercise Log!</h1>
       {
         exerciseLogs.map(singleExerciseLog => {
           if (singleExerciseLog.userId === currentlyLoggedInuser)
