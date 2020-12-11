@@ -28,8 +28,7 @@ const onSubmit = (data) => {
             <input type="text" placeholder="Attitude" name="attitude" ref={register}/>
             <input type="text" placeholder="Time" name="workoutTime" ref={register}/>
             <input type="hidden" value={new Date().toLocaleDateString('en-US')} name="date" ref={register}/>
-
-            {/* ${new Date(newsObj.timestamp).toLocaleDateString('en-US')} */}
+            
             <input type="hidden" name="userId" value={localStorage.getItem("app_user_id")} ref={register}/>
             <button type="submit">Submit</button>
         </form>

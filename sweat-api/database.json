@@ -19,27 +19,68 @@
       "id": 3
     }
   ],
-  "exerciseLogs": [],
-  "exerciseTypes": [
+  "exerciseLogs": [
     {
-      "name": "Squat",
+      "sets": 10,
+      "weight": 150,
+      "effortId": 9,
+      "attitude": "Great today!",
+      "workoutTime": 30,
+      "date": "12/11/2020",
       "userId": 1,
       "id": 1
     },
     {
-      "name": "Hill Climbers",
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "name": "Sprints",
+      "sets": 15,
+      "weight": 148,
+      "effortId": 9,
+      "attitude": "Pretty good!",
+      "workoutTime": 20,
+      "date": "12/11/2020",
       "userId": 1,
       "id": 3
     },
     {
-      "name": "laksjfaldkfsj",
+      "sets": 20,
+      "weight": 150,
+      "effortId": 7,
+      "attitude": "Not that good",
+      "workoutTime": 25,
+      "date": "12/11/2020",
       "userId": 1,
       "id": 4
+    },
+    {
+      "sets": 15,
+      "weight": 149,
+      "effortId": 6,
+      "attitude": "Ok....",
+      "workoutTime": 10,
+      "date": "12/11/2020",
+      "userId": 1,
+      "id": 5
+    }
+  ],
+  "exerciseTypes": [
+    {
+      "name": "Push Up",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Sit up",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "name": "Jumping Jack",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "name": "Squat",
+      "userId": 1,
+      "id": 5
     }
   ],
   "effort": [
