@@ -1,0 +1,31 @@
+import React, { useState } from "react"
+
+
+/*
+    The context is imported and used by individual components
+    that need data
+*/
+export const EffortContext = React.createContext()
+
+/*
+ This component establishes what data can be used.
+ */
+export const EffortProvider = (props) => {
+    const [effort, setEffort] = useState([]) // Inital value of state variable, a function to set the value of the state variable.
+
+    const getEffort = () => {
+        return fetch("http://localhost:8088/effort")
+            .then(res => res.json())
+            .then(setEffort)
+    }
+
+    return (
+        <EffortContext.Provider value={{
+            effort, getEffort
+        }}>
+            {props.children}
+        </EffortContext.Provider>
+    )
+}
+
+// What I did with this module to create a drop down menu: I created this provider to create a getEffort fetch GET Method, then I created 

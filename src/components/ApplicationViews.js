@@ -9,6 +9,7 @@ import { ExerciseLogList } from './exerciseLog/ExerciseLogList'
 
 import {ExerciseTypeForm} from './exercise/ExerciseTypeForm'
 import {ExerciseLogForm} from './exerciseLog/ExerciseLogForm'
+import { EffortProvider } from './effort/EffortProvider'
 
 
 export const ApplicationViews = (props) => {
@@ -41,11 +42,13 @@ export const ApplicationViews = (props) => {
         </Route>
         </ExerciseTypeProvider>
 
+        <EffortProvider>
         <ExerciseLogProvider >
         <Route path="/newExerciseLogform">
             <ExerciseLogForm ></ExerciseLogForm>
         </Route>
         </ExerciseLogProvider>
+        </EffortProvider>
         </>
     )
 }
