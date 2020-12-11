@@ -29,10 +29,16 @@ export const ExerciseTypeProvider = (props) => {
         })
             .then(getExerciseTypes)
     }
+    const deleteExerciseLog = exerciseTypeId => {
+        return fetch(`http://localhost:8088/exerciseTypes/${exerciseTypeId}`, {
+            method: "DELETE"
+        })
+            .then(getExerciseTypes)
+    }
 
     return (
         <ExerciseTypeContext.Provider value={{
-            exerciseTypes, addExerciseType, getExerciseTypes
+            exerciseTypes, addExerciseType, getExerciseTypes, deleteExerciseLog
         }}>
             {props.children}
         </ExerciseTypeContext.Provider>
