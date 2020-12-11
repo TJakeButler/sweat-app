@@ -21,26 +21,6 @@
   ],
   "exerciseLogs": [
     {
-      "sets": 10,
-      "weight": 150,
-      "effortId": 9,
-      "attitude": "Great today!",
-      "workoutTime": 30,
-      "date": "12/11/2020",
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "sets": 15,
-      "weight": 148,
-      "effortId": 9,
-      "attitude": "Pretty good!",
-      "workoutTime": 20,
-      "date": "12/11/2020",
-      "userId": 1,
-      "id": 3
-    },
-    {
       "sets": 20,
       "weight": 150,
       "effortId": 7,
@@ -59,28 +39,38 @@
       "date": "12/11/2020",
       "userId": 1,
       "id": 5
+    },
+    {
+      "sets": 10,
+      "weight": 150,
+      "effortId": 9,
+      "attitude": "Great!",
+      "workoutTime": 30,
+      "date": "12/11/2020",
+      "userId": 2,
+      "id": 6
+    },
+    {
+      "sets": null,
+      "weight": null,
+      "effortId": null,
+      "attitude": "",
+      "workoutTime": null,
+      "date": "12/11/2020",
+      "userId": 2,
+      "id": 7
     }
   ],
   "exerciseTypes": [
-    {
-      "name": "Push Up",
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "name": "Sit up",
-      "userId": 1,
-      "id": 3
-    },
     {
       "name": "Jumping Jack",
       "userId": 1,
       "id": 4
     },
     {
-      "name": "Squat",
-      "userId": 1,
-      "id": 5
+      "name": "Eating Pizza",
+      "userId": 2,
+      "id": 6
     }
   ],
   "effort": [
