@@ -27,56 +27,18 @@
   ],
   "exerciseLogs": [
     {
-      "exerciseType": "Jumping Jack",
-      "sets": 10,
+      "exerciseType": "Burpee",
+      "sets": 20,
       "weight": 150,
-      "effort": "2 - This was low effort",
-      "attitude": "great",
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "Great!",
       "workoutTime": 30,
       "date": "12/12/2020",
       "userId": 1,
       "id": 1
-    },
-    {
-      "exerciseType": "0",
-      "sets": null,
-      "weight": null,
-      "effort": "0",
-      "attitude": "",
-      "workoutTime": null,
-      "date": "12/12/2020",
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "exerciseType": "Eating Pizza",
-      "sets": 10,
-      "weight": 150,
-      "effort": "2 - This was low effort",
-      "attitude": "Great",
-      "workoutTime": 30,
-      "date": "12/12/2020",
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "exerciseType": "Eating Pizza",
-      "sets": 10,
-      "weight": 150,
-      "effort": "8 - This was a really good workout",
-      "attitude": "great",
-      "workoutTime": 10,
-      "date": "12/12/2020",
-      "userId": 1,
-      "id": 4
     }
   ],
   "exerciseTypes": [
-    {
-      "name": "Jumping Jack",
-      "userId": 1,
-      "id": 4
-    },
     {
       "name": "Eating Pizza",
       "userId": 2,
@@ -88,7 +50,7 @@
       "id": 7
     },
     {
-      "name": "hand stand push ups",
+      "name": "Burpee",
       "userId": 1,
       "id": 8
     }
