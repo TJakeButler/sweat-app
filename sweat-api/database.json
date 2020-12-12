@@ -17,6 +17,12 @@
       "password": "pw",
       "name": "Dan Mcguire",
       "id": 3
+    },
+    {
+      "email": "sally@gmail.com",
+      "password": "pw",
+      "name": "Sally Leathers",
+      "id": 4
     }
   ],
   "exerciseLogs": [
@@ -49,6 +55,16 @@
       "date": "12/11/2020",
       "userId": 1,
       "id": 3
+    },
+    {
+      "sets": 10,
+      "weight": 100,
+      "effort": "This was less than average",
+      "attitude": "laksjflkajd",
+      "workoutTime": 30,
+      "date": "12/12/2020",
+      "userId": 4,
+      "id": 4
     }
   ],
   "exerciseTypes": [
@@ -71,58 +87,48 @@
       "name": "hand stand push ups",
       "userId": 1,
       "id": 8
-    },
-    {
-      "name": "Stuff!",
-      "userId": 1,
-      "id": 9
-    },
-    {
-      "name": "LJALKJFDS",
-      "userId": 1,
-      "id": 10
     }
   ],
   "effort": [
     {
       "id": 1,
-      "description": "This was lowest effort possible"
+      "description": "1 - This was lowest effort possible"
     },
     {
       "id": 2,
-      "description": "This was low effort"
+      "description": "2 - This was low effort"
     },
     {
       "id": 3,
-      "description": "I just wasn't feeling it today"
+      "description": "3 - I just wasn't feeling it today"
     },
     {
       "id": 4,
-      "description": "This was less than average"
+      "description": "4 - This was less than average"
     },
     {
       "id": 5,
-      "description": "This was just alright"
+      "description": "5 - This was just alright"
     },
     {
       "id": 6,
-      "description": "This was pretty good"
+      "description": "6 - This was pretty good"
     },
     {
       "id": 7,
-      "description": "This was above average"
+      "description": "7 - This was above average"
     },
     {
       "id": 8,
-      "description": "This was a really good workout"
+      "description": "8 - This was a really good workout"
     },
     {
       "id": 9,
-      "description": "I felt great!"
+      "description": "9 - I felt great!"
     },
     {
       "id": 10,
-      "description": "Best Effot Possible!"
+      "description": " 10 - Best Effort Possible!"
     }
   ]
 }

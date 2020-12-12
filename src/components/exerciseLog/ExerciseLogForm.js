@@ -42,7 +42,7 @@ const onSubmit = (data) => {
             {/* <input type="text" placeholder="Effort" name="effortId" ref={register}/> */}
             <select name="effort" placeholder="" ref={register}>
                 
-            <option value="0">--Please choose an option--</option>
+            <option value="0">---Your effort on a scale 1-10---</option>
             {effort.map(effort => (<option key={effort.id} value={effort.description}>
                                 {effort.description}
                             </option>))}
