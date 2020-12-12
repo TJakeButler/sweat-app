@@ -11,7 +11,7 @@ export const ExerciseTypeForm = (props) => {
 const {register, handleSubmit } = useForm(); 
 const onSubmit = data => {
     data["userId"] = parseInt(data.userId)
-    addExerciseType(data)
+    addExerciseType(data).then(() => props.history.push('/exerciseTypes'))
     console.log(data)
 }
     
