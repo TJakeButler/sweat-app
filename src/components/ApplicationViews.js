@@ -19,6 +19,14 @@ export const ApplicationViews = (props) => {
                 {/* Render the location list when http://localhost:3000/ */}
                 <Route exact path="/">
                     <h1>You're at the Home Page!</h1>
+                    <button onClick={() => {
+
+                        localStorage.clear();
+                        props.history.push("/login")
+                        console.log("Log Out Button Clicked!")
+                    }
+                        
+                }>Log Out!</button>
                 </Route>
             
 
