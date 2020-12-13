@@ -36,6 +36,28 @@
       "date": "12/12/2020",
       "userId": 1,
       "id": 1
+    },
+    {
+      "exerciseType": "Burpee",
+      "sets": 10,
+      "weight": 100,
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "Kicked ass",
+      "workoutTime": 15,
+      "date": "12/12/2020",
+      "userId": 4,
+      "id": 2
+    },
+    {
+      "exerciseType": "Burpee",
+      "sets": 10,
+      "weight": 150,
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "Great!",
+      "workoutTime": 30,
+      "date": "12/12/2020",
+      "userId": 1,
+      "id": 3
     }
   ],
   "exerciseTypes": [
@@ -51,8 +73,33 @@
     },
     {
       "name": "Burpee",
+      "userId": 4,
+      "id": 9
+    },
+    {
+      "name": "Push ups",
+      "userId": 4,
+      "id": 10
+    },
+    {
+      "name": "Jumping Jacks",
+      "userId": 4,
+      "id": 11
+    },
+    {
+      "name": "Burpee",
       "userId": 1,
-      "id": 8
+      "id": 12
+    },
+    {
+      "name": "Push up",
+      "userId": 1,
+      "id": 13
+    },
+    {
+      "name": "Pull up",
+      "userId": 1,
+      "id": 14
     }
   ],
   "effort": [
