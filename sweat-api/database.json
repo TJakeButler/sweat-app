@@ -23,42 +23,15 @@
       "password": "pw",
       "name": "Sally Leathers",
       "id": 4
+    },
+    {
+      "email": "madi@gmail.com",
+      "password": "pw",
+      "name": "Madi Peper",
+      "id": 5
     }
   ],
   "exerciseLogs": [
-    {
-      "exerciseType": "David Bing's Crazy exercise",
-      "sets": 20,
-      "weight": 150,
-      "effort": "7 - This was above average",
-      "attitude": "Great!",
-      "workoutTime": 30,
-      "date": "12/14/2020",
-      "userId": 4,
-      "id": 7
-    },
-    {
-      "exerciseType": "Burpee",
-      "sets": 20,
-      "weight": 150,
-      "effort": "1 - This was lowest effort possible",
-      "attitude": "asdgsdg",
-      "workoutTime": 39,
-      "date": "12/14/2020",
-      "userId": 1,
-      "id": 9
-    },
-    {
-      "exerciseType": "Eating Donuts",
-      "sets": 20,
-      "weight": 500,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "I ate the whole thinggggg",
-      "workoutTime": 45,
-      "date": "12/14/2020",
-      "userId": 2,
-      "id": 10
-    },
     {
       "exerciseType": "Jumping Jacks",
       "sets": 10,
@@ -102,63 +75,84 @@
       "date": "12/14/2020",
       "userId": 3,
       "id": 14
+    },
+    {
+      "exerciseType": "Madi's crazy exercis",
+      "sets": 10,
+      "weight": 150,
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "We killed it today!",
+      "workoutTime": 30,
+      "date": "12/14/2020",
+      "userId": 1,
+      "id": 15
+    },
+    {
+      "exerciseType": "alksdfj",
+      "sets": 10,
+      "weight": 150,
+      "effort": "4 - This was less than average",
+      "attitude": "great",
+      "workoutTime": 10,
+      "date": "12/14/2020",
+      "userId": 1,
+      "id": 17
+    },
+    {
+      "exerciseType": "bubba no!",
+      "sets": 10,
+      "weight": 150,
+      "effort": "1 - This was lowest effort possible",
+      "attitude": "goakjdg",
+      "workoutTime": 10,
+      "date": "12/14/2020",
+      "userId": 2,
+      "id": 18
+    },
+    {
+      "exerciseType": "bubba no!",
+      "sets": 10,
+      "weight": 150,
+      "effort": "4 - This was less than average",
+      "attitude": "skodfjslakdfj",
+      "workoutTime": 10,
+      "date": "12/14/2020",
+      "userId": 2,
+      "id": 22
+    },
+    {
+      "exerciseType": "sldfkjaskldfj",
+      "sets": 10,
+      "weight": 150,
+      "effort": "2 - This was low effort",
+      "attitude": "SALDKFJLKSADFJ",
+      "workoutTime": 10,
+      "date": "12/14/2020",
+      "userId": 1,
+      "id": 23
+    },
+    {
+      "exerciseType": "New stuff!",
+      "sets": 10,
+      "weight": 10,
+      "effort": "2 - This was low effort",
+      "attitude": "asdfa",
+      "workoutTime": 10,
+      "date": "12/14/2020",
+      "userId": 5,
+      "id": 24
     }
   ],
   "exerciseTypes": [
-    {
-      "name": "Burpee",
-      "userId": 4,
-      "id": 9
-    },
-    {
-      "name": "Push ups",
-      "userId": 4,
-      "id": 10
-    },
-    {
-      "name": "Jumping Jacks",
-      "userId": 4,
-      "id": 11
-    },
     {
       "name": "Pull ups",
       "userId": 4,
       "id": 16
     },
     {
-      "name": "Eating Tacos",
-      "userId": 2,
-      "id": 18
-    },
-    {
-      "name": "Burpee",
-      "userId": 1,
-      "id": 19
-    },
-    {
-      "name": "Pul ups",
-      "userId": 1,
-      "id": 20
-    },
-    {
-      "name": "push ups",
-      "userId": 1,
-      "id": 21
-    },
-    {
       "name": "David Bing's Crazy exercise",
       "userId": 4,
       "id": 22
-    },
-    {
-      "name": "Eating Hotdawgs",
-      "userId": 2,
-      "id": 23
-    },
-    {
-      "name": "Eating Donuts",
-      "userId": 2,
-      "id": 24
     },
     {
       "name": "Vapping",
@@ -169,6 +163,46 @@
       "name": "Computering",
       "userId": 3,
       "id": 26
+    },
+    {
+      "name": "Jake's new stuff",
+      "userId": 1,
+      "id": 28
+    },
+    {
+      "name": "alksdfj",
+      "userId": 1,
+      "id": 31
+    },
+    {
+      "name": "New stuff!!!!!",
+      "userId": 4,
+      "id": 32
+    },
+    {
+      "name": "bubba eyah!",
+      "userId": 2,
+      "id": 33
+    },
+    {
+      "name": "bubba no!",
+      "userId": 2,
+      "id": 34
+    },
+    {
+      "name": "dont care",
+      "userId": 2,
+      "id": 35
+    },
+    {
+      "name": "sldfkjaskldfj",
+      "userId": 1,
+      "id": 40
+    },
+    {
+      "name": "New stuff!",
+      "userId": 5,
+      "id": 41
     }
   ],
   "effort": [

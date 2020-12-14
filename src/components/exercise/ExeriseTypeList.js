@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 export const ExerciseTypeList = () => {
   // This state changes when `getExerciseType()` is invoked below
   const { exerciseTypes, addExerciseType, getExerciseTypes } = useContext(ExerciseTypeContext)
+
 // currentlyLoggedInuser is setting a variable that holds the value of the currenlty logged in user held in localStorage. // 
   const currentlyLoggedInuser = parseInt(localStorage.getItem("app_user_id"))
 
@@ -34,3 +35,6 @@ export const ExerciseTypeList = () => {
  </>   
   )
 }
+
+
+// ******* THIS MODULE IS RENDERING THE EXERCISE TYPE LIST TO THE DOM. THE LIST KNOWS WHO IS LOGGED IN BY THE CONST CURRENTLYLOGGEDINUSER, THIS CONST HOLDS THE VALUE OF THE USER IN LOCALSTORAGE. THE LIST THEN MAPS THROUGH MY ARRAY OF EXERCISETYPES AND USES AN IF CONDITIONAL TO SEE IF THE SINGLEEXERCISETYPE === CURRENTLYLOGGEDINUSER AND THEN RETURNS THE EXERCISETYPE FUNCTION AND PASSES IN THE PARAM OF EXERCISETYPEOBJ    **********//
