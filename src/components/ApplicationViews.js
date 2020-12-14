@@ -10,7 +10,7 @@ import { ExerciseLogList } from './exerciseLog/ExerciseLogList'
 import {ExerciseTypeForm} from './exercise/ExerciseTypeForm'
 import {ExerciseLogForm} from './exerciseLog/ExerciseLogForm'
 import { EffortProvider } from './effort/EffortProvider'
-
+import { Button } from 'reactstrap'
 
 export const ApplicationViews = (props) => {
     return (
@@ -19,14 +19,14 @@ export const ApplicationViews = (props) => {
                 {/* Render the location list when http://localhost:3000/ */}
                 <Route exact path="/">
                     <h1>You're at the Home Page!</h1>
-                    <button onClick={() => {
+                    <Button onClick={() => {
 
                         localStorage.clear();
                         props.history.push("/login")
-                        console.log("Log Out Button Clicked!")
+                        
                     }
                         
-                }>Log Out!</button>
+                }>Log Out!</Button>
                 </Route>
             
 

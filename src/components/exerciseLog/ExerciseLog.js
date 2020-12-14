@@ -1,28 +1,26 @@
-import React, {useContext} from "react"
-import {ExerciseLogContext} from "./ExerciseLogProvider"
+import React, { useContext } from "react"
+import { ExerciseLogContext } from "./ExerciseLogProvider"
 
 
 export const ExerciseLog = ({ ExerciseLogObj }) => {
-  const {deleteExercise} = useContext(ExerciseLogContext)
-   
+  const { deleteExercise } = useContext(ExerciseLogContext)
+
   return <>
-  <section className="">
-    <h3 className="">Exercise Log ID:{ExerciseLogObj.id}</h3>
-<div className="">UserId:{ExerciseLogObj.userId}</div>
-<div className="">ExerciseType:{ExerciseLogObj.exerciseType}</div>
-<div className="">Sets:{ExerciseLogObj.sets}</div>
-<div className="">Weight:{ExerciseLogObj.weight}</div>
-<div className="">Effort: {ExerciseLogObj.effort}</div>
-<div className="">Minutes:{ExerciseLogObj.workoutTime}</div>
-<div className="">Date:{ExerciseLogObj.date}</div>
-<button className="btn--release"
+    <section>
+      <h3>Exercise Log ID:{ExerciseLogObj.id}</h3>
+      <div>UserId:{ExerciseLogObj.userId}</div>
+      <div>ExerciseType:{ExerciseLogObj.exerciseType}</div>
+      <div>Sets:{ExerciseLogObj.sets}</div>
+      <div>Weight:{ExerciseLogObj.weight}</div>
+      <div>Effort: {ExerciseLogObj.effort}</div>
+      <div>Minutes:{ExerciseLogObj.workoutTime}</div>
+      <div>Date:{ExerciseLogObj.date}</div>
+      <button
         onClick={() => {
-            deleteExercise(ExerciseLogObj.id)
-            .then(() => {
-              // ExerciseLogObj.history.push("/exerciseLogs")
-            })
+          deleteExercise(ExerciseLogObj.id)
+
         }}
->Delete Exercise</button>
-  </section>
+      >Delete Exercise</button>
+    </section>
   </>
-      }
+}

@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react"
+import React, { useContext } from "react"
 import { useForm } from "react-hook-form";
 import { ExerciseTypeContext } from "./ExeriseTypeProvider";
 
@@ -12,7 +12,7 @@ const {register, handleSubmit } = useForm();
 const onSubmit = data => {
     data["userId"] = parseInt(data.userId)
     addExerciseType(data).then(() => props.history.push('/exerciseTypes'))
-    console.log(data)
+    
 }
     
 return (
@@ -30,3 +30,4 @@ return (
 }
 
 
+// ******* THIS MODULE RENDERS THE EXERCISE TYPE FORM TO THE DOM WHICH IS USING THE USE FORM HOOK FROM REACT-HOOK-FORM. THIS FORM IS SENDING THE DATA VIA THE HANDLESUBMIT FUNCTION AND THAT DATA IS GIVEN AS A PARAM TO THE ADDEXERCISETYPE FUNCTION WHICH I IMPORTED THROUGH EXERCISETYPECONTEXT, THE ADDEXERCISETYPE FUNCTION POSTS THIS OBJECT TO THE JSON SERVER AND .THEN IT IS SENDING THE USER TO THE EXERCISETYPES PAGE TO VIEW ALL THEIR OTHER EXERCISES THAT THEY HAVE CREATED.  ****** // 

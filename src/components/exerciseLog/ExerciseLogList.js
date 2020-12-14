@@ -4,7 +4,7 @@ import { ExerciseLogContext } from "./ExerciseLogProvider"
 
 export const ExerciseLogList = () => {
   // This state changes when `getExerciseLogs()` is invoked below
-  const { exerciseLogs, addExerciseLog, getExerciseLogs } = useContext(ExerciseLogContext)
+  const { exerciseLogs, getExerciseLogs } = useContext(ExerciseLogContext)
   // currentlyLoggedInuser is setting a variable that holds the value of the currenlty logged in user held in localStorage. // 
 
   const currentlyLoggedInuser = parseInt(localStorage.getItem("app_user_id"))
@@ -12,7 +12,7 @@ export const ExerciseLogList = () => {
 // This useEffect is only being ran on render of the list and not again.
   useEffect(
     () => {
-      console.log("ExerciseLogList: Initial render before data")
+      
       getExerciseLogs()
     },
     []

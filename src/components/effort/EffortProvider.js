@@ -1,5 +1,7 @@
 import React, { useState } from "react"
 
+// ******** THE EFFORT PROVIDER HANDLES THE LOGIC FOR DOING A FETCH REQUEST FROM MY JSON SERVER. THE EFFORTCONTEXT IS EXPORTING BOTH GETEFFORT AND EFFORT TO BE USED BY OTHER COMPONENTS ***** // 
+
 
 /*
     The context is imported and used by individual components
@@ -28,4 +30,5 @@ export const EffortProvider = (props) => {
     )
 }
 
-// What I did with this module to create a drop down menu: I created this provider to create a getEffort fetch GET Method, then I created 
+// What I did with this module to create a drop down menu: I created this provider to create a getEffort fetch GET Method // 
+
