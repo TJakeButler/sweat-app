@@ -13,7 +13,7 @@ return <>
         onClick={() => {
           deleteExerciseLog(ExerciseTypeObj.id)
             .then(() => {
-              // ExerciseLogObj.history.push("/exerciseLogs")
+              
             })
         }}
 >Delete Exercise</button>

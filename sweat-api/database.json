@@ -27,50 +27,84 @@
   ],
   "exerciseLogs": [
     {
+      "exerciseType": "David Bing's Crazy exercise",
+      "sets": 20,
+      "weight": 150,
+      "effort": "7 - This was above average",
+      "attitude": "Great!",
+      "workoutTime": 30,
+      "date": "12/14/2020",
+      "userId": 4,
+      "id": 7
+    },
+    {
       "exerciseType": "Burpee",
       "sets": 20,
       "weight": 150,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "Great!",
-      "workoutTime": 30,
-      "date": "12/12/2020",
+      "effort": "1 - This was lowest effort possible",
+      "attitude": "asdgsdg",
+      "workoutTime": 39,
+      "date": "12/14/2020",
       "userId": 1,
-      "id": 1
+      "id": 9
     },
     {
-      "exerciseType": "Burpee",
-      "sets": 10,
-      "weight": 100,
+      "exerciseType": "Eating Donuts",
+      "sets": 20,
+      "weight": 500,
       "effort": " 10 - Best Effort Possible!",
-      "attitude": "Kicked ass",
-      "workoutTime": 15,
-      "date": "12/12/2020",
-      "userId": 4,
-      "id": 2
+      "attitude": "I ate the whole thinggggg",
+      "workoutTime": 45,
+      "date": "12/14/2020",
+      "userId": 2,
+      "id": 10
     },
     {
-      "exerciseType": "Burpee",
+      "exerciseType": "Jumping Jacks",
+      "sets": 10,
+      "weight": 150,
+      "effort": "1 - This was lowest effort possible",
+      "attitude": "g",
+      "workoutTime": 30,
+      "date": "12/14/2020",
+      "userId": 4,
+      "id": 11
+    },
+    {
+      "exerciseType": "David Bing's Crazy exercise",
       "sets": 10,
       "weight": 150,
       "effort": " 10 - Best Effort Possible!",
-      "attitude": "Great!",
+      "attitude": "asdfasf",
+      "workoutTime": 10,
+      "date": "12/14/2020",
+      "userId": 4,
+      "id": 12
+    },
+    {
+      "exerciseType": "Computering",
+      "sets": 10,
+      "weight": 150,
+      "effort": "1 - This was lowest effort possible",
+      "attitude": "asdf",
       "workoutTime": 30,
-      "date": "12/12/2020",
-      "userId": 1,
-      "id": 3
+      "date": "12/14/2020",
+      "userId": 3,
+      "id": 13
+    },
+    {
+      "exerciseType": "Vapping",
+      "sets": 30,
+      "weight": 150,
+      "effort": "5 - This was just alright",
+      "attitude": "aslkdfjdslj",
+      "workoutTime": 30,
+      "date": "12/14/2020",
+      "userId": 3,
+      "id": 14
     }
   ],
   "exerciseTypes": [
-    {
-      "name": "Eating Pizza",
-      "userId": 2,
-      "id": 6
-    },
-    {
-      "name": "New Exercise",
-      "userId": 2,
-      "id": 7
-    },
     {
       "name": "Burpee",
       "userId": 4,
@@ -87,19 +121,54 @@
       "id": 11
     },
     {
+      "name": "Pull ups",
+      "userId": 4,
+      "id": 16
+    },
+    {
+      "name": "Eating Tacos",
+      "userId": 2,
+      "id": 18
+    },
+    {
       "name": "Burpee",
       "userId": 1,
-      "id": 12
+      "id": 19
     },
     {
-      "name": "Push up",
+      "name": "Pul ups",
       "userId": 1,
-      "id": 13
+      "id": 20
     },
     {
-      "name": "Pull up",
+      "name": "push ups",
       "userId": 1,
-      "id": 14
+      "id": 21
+    },
+    {
+      "name": "David Bing's Crazy exercise",
+      "userId": 4,
+      "id": 22
+    },
+    {
+      "name": "Eating Hotdawgs",
+      "userId": 2,
+      "id": 23
+    },
+    {
+      "name": "Eating Donuts",
+      "userId": 2,
+      "id": 24
+    },
+    {
+      "name": "Vapping",
+      "userId": 3,
+      "id": 25
+    },
+    {
+      "name": "Computering",
+      "userId": 3,
+      "id": 26
     }
   ],
   "effort": [
