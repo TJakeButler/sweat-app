@@ -77,28 +77,6 @@
       "id": 14
     },
     {
-      "exerciseType": "Madi's crazy exercis",
-      "sets": 10,
-      "weight": 150,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "We killed it today!",
-      "workoutTime": 30,
-      "date": "12/14/2020",
-      "userId": 1,
-      "id": 15
-    },
-    {
-      "exerciseType": "alksdfj",
-      "sets": 10,
-      "weight": 150,
-      "effort": "4 - This was less than average",
-      "attitude": "great",
-      "workoutTime": 10,
-      "date": "12/14/2020",
-      "userId": 1,
-      "id": 17
-    },
-    {
       "exerciseType": "bubba no!",
       "sets": 10,
       "weight": 150,
@@ -121,23 +99,23 @@
       "id": 22
     },
     {
-      "exerciseType": "sldfkjaskldfj",
+      "exerciseType": "Planks",
       "sets": 10,
       "weight": 150,
-      "effort": "2 - This was low effort",
-      "attitude": "SALDKFJLKSADFJ",
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "Always feeling good!",
       "workoutTime": 10,
       "date": "12/14/2020",
       "userId": 1,
       "id": 23
     },
     {
-      "exerciseType": "New stuff!",
+      "exerciseType": "Keeping it cool!",
       "sets": 10,
-      "weight": 10,
-      "effort": "2 - This was low effort",
-      "attitude": "asdfa",
-      "workoutTime": 10,
+      "weight": 100,
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "Amazing",
+      "workoutTime": 60,
       "date": "12/14/2020",
       "userId": 5,
       "id": 24
@@ -165,16 +143,6 @@
       "id": 26
     },
     {
-      "name": "Jake's new stuff",
-      "userId": 1,
-      "id": 28
-    },
-    {
-      "name": "alksdfj",
-      "userId": 1,
-      "id": 31
-    },
-    {
       "name": "New stuff!!!!!",
       "userId": 4,
       "id": 32
@@ -195,14 +163,44 @@
       "id": 35
     },
     {
-      "name": "sldfkjaskldfj",
+      "name": "Deadlifts",
+      "userId": 1,
+      "id": 37
+    },
+    {
+      "name": "Push Ups",
+      "userId": 1,
+      "id": 38
+    },
+    {
+      "name": "Dips",
+      "userId": 1,
+      "id": 39
+    },
+    {
+      "name": "Squats",
       "userId": 1,
       "id": 40
     },
     {
-      "name": "New stuff!",
-      "userId": 5,
+      "name": "Planks",
+      "userId": 1,
       "id": 41
+    },
+    {
+      "name": "Being awesome!",
+      "userId": 5,
+      "id": 42
+    },
+    {
+      "name": "Being the best!",
+      "userId": 5,
+      "id": 43
+    },
+    {
+      "name": "Keeping it cool!",
+      "userId": 5,
+      "id": 44
     }
   ],
   "effort": [

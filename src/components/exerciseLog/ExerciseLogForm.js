@@ -3,10 +3,6 @@ import { useForm } from "react-hook-form";
 import { ExerciseLogContext } from './ExerciseLogProvider'
 import { EffortContext } from '../effort/EffortProvider'
 import { ExerciseTypeContext } from "../exercise/ExeriseTypeProvider";
-// import {ExerciseTypeContext} from '../exercise/ExerciseTypeProvider'
-
-
-
 
 export const ExerciseLogForm = (props) => {
     const { addExerciseLog } = useContext(ExerciseLogContext)
@@ -15,22 +11,13 @@ export const ExerciseLogForm = (props) => {
 
     useEffect(() => {
         getEffort()
-        console.log(effort)
-    }, [])
 
-    useEffect(() => {
-        console.log('useEffect state', effort)
-    }, [effort])
+    }, [])
 
     useEffect(() => {
         getExerciseTypes()
-        console.log(exerciseTypes)
+       
     }, [])
-
-    useEffect(() => {
-        console.log('useEffect state', exerciseTypes)
-    }, [exerciseTypes])
-
 
     const { register, handleSubmit } = useForm();
     const currentlyLoggedInuser = parseInt(localStorage.getItem("app_user_id"))
@@ -39,12 +26,10 @@ export const ExerciseLogForm = (props) => {
         data["userId"] = parseInt(data.userId)
         data["sets"] = parseInt(data.sets)
         data["weight"] = parseInt(data.weight)
-        // data["effortId"] = parseInt(data.effortId)
         data["workoutTime"] = parseInt(data.workoutTime)
-        // data["exerciseType"] = parseInt(data.exerciseType)
-
+        
         addExerciseLog(data).then(() => props.history.push('/exerciseLogs'))
-        console.log(data)
+        
     }
 
     return (
@@ -58,8 +43,7 @@ export const ExerciseLogForm = (props) => {
 
 
                         if (exerciseTypes.userId === currentlyLoggedInuser) {
-                            { console.table("This is exerciseTypes for logged in user!", exerciseTypes.userId) }
-
+                            
                             return (<option key={exerciseTypes.id} value={exerciseTypes.name}>
                                 {exerciseTypes.name}
                             </option>)
@@ -71,7 +55,6 @@ export const ExerciseLogForm = (props) => {
 
                 <input type="text" placeholder="Sets" name="sets" ref={register} />
                 <input type="text" placeholder="Weight" name="weight" ref={register} />
-                {/* <input type="text" placeholder="Effort" name="effortId" ref={register}/> */}
                 <select name="effort" placeholder="" ref={register}>
 
                     <option value="0">---Your effort on a scale 1-10---</option>

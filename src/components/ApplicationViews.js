@@ -23,7 +23,7 @@ export const ApplicationViews = (props) => {
 
                         localStorage.clear();
                         props.history.push("/login")
-                        console.log("Log Out Button Clicked!")
+                        
                     }
                         
                 }>Log Out!</Button>

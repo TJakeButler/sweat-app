@@ -1,19 +1,18 @@
 import React, { useContext, useEffect } from "react"
 import { ExerciseType } from "./ExerciseType"
 import { ExerciseTypeContext } from "./ExeriseTypeProvider"
-import { useForm } from "react-hook-form";
+
 
 
 export const ExerciseTypeList = () => {
   // This state changes when `getExerciseType()` is invoked below
-  const { exerciseTypes, addExerciseType, getExerciseTypes } = useContext(ExerciseTypeContext)
+  const { exerciseTypes, getExerciseTypes } = useContext(ExerciseTypeContext)
 
 // currentlyLoggedInuser is setting a variable that holds the value of the currenlty logged in user held in localStorage. // 
   const currentlyLoggedInuser = parseInt(localStorage.getItem("app_user_id"))
 
   useEffect(
     () => {
-      console.log("ExerciseTypeList: Initial render before data")
       getExerciseTypes()
     },
     []

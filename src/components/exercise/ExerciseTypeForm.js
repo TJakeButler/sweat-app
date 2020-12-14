@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef } from "react"
+import React, { useContext } from "react"
 import { useForm } from "react-hook-form";
 import { ExerciseTypeContext } from "./ExeriseTypeProvider";
 
@@ -12,7 +12,7 @@ const {register, handleSubmit } = useForm();
 const onSubmit = data => {
     data["userId"] = parseInt(data.userId)
     addExerciseType(data).then(() => props.history.push('/exerciseTypes'))
-    console.log(data)
+    
 }
     
 return (
