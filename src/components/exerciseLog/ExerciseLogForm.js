@@ -52,15 +52,15 @@ export const ExerciseLogForm = (props) => {
                             </option>)
                         }
                     })}
-
+                
 
                 </select>
                 </div>
                 <div className="form-group">    
-                <input  type="text" placeholder="Sets" name="sets" ref={register} />
+                <input class="form-control form-control-lg" type="text" placeholder="Sets" name="sets" ref={register} />
                 </div>
                 <div className="form-group">
-                <input type="text" placeholder="Weight" name="weight" ref={register} />
+                <input class="form-control form-control-lg" type="text" placeholder="Weight" name="weight" ref={register} />
                 </div>
                 <div className="form-group">
                 <select name="effortId" placeholder="" ref={register}>
@@ -72,12 +72,12 @@ export const ExerciseLogForm = (props) => {
                 </select>
                 </div>        
                 <div className="form-group">
-                <input type="text" placeholder="Attitude" name="attitude" ref={register} />
+                <input class="form-control form-control-lg" type="text" placeholder="Attitude" name="attitude" ref={register} />
                 </div>
                 <div className="form-group">
-                <input type="text" placeholder="Time" name="workoutTime" ref={register} />
+                <input class="form-control form-control-lg" type="text" placeholder="Time" name="workoutTime" ref={register} />
                 </div>
-                <input type="hidden" value={new Date().toLocaleDateString('en-US')} name="date" ref={register} />
+                <input  type="hidden" value={new Date().toLocaleDateString('en-US')} name="date" ref={register} />
 
                 <input type="hidden" name="userId" value={localStorage.getItem("app_user_id")} ref={register} />
                 <Button type="submit">Submit</Button>

@@ -62,8 +62,12 @@ export const ExerciseLog = ({ ExerciseLogObj}) => {
   })
 
   return <>
+  <div className="card">
     <section>
+      <div className="card-header">
       <h3>Exercise Log ID:{ExerciseLogObj.id}</h3>
+      </div>
+      <div className="card-body">
       <div>UserId:{ExerciseLogObj.userId}</div>
       <div>ExerciseType:{foundExerciseType}</div>
       <div>Sets:{ExerciseLogObj.sets}</div>
@@ -71,6 +75,7 @@ export const ExerciseLog = ({ ExerciseLogObj}) => {
       <div>Effort: {description}</div>
       <div>Minutes:{ExerciseLogObj.workoutTime}</div>
       <div>Date:{ExerciseLogObj.date}</div>
+      </div>
       <Button
         onClick={() => {
           deleteExercise(ExerciseLogObj.id)
@@ -78,6 +83,7 @@ export const ExerciseLog = ({ ExerciseLogObj}) => {
         }}
       >Delete Exercise</Button>
     </section>
+    </div>
   </>
 }
 

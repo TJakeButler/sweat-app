@@ -23,7 +23,7 @@
 //         </ul>
 //     )
 // }
-
+import {Button} from 'reactstrap'
 import React, { useState } from 'react';
 import {
   Collapse,
@@ -65,7 +65,16 @@ export const Example = (props) => {
               <NavLink href="/newExerciseLogform/">Log New Exercise</NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>SWEAT App</NavbarText>
+          <NavbarText>
+          <Button onClick={() => {
+
+localStorage.clear();
+props.history.push("/login")
+
+}
+
+}>Log Out!</Button>
+          </NavbarText>
         </Collapse>
       </Navbar>
     </div>

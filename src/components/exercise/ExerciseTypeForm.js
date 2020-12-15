@@ -21,7 +21,7 @@ return (
     <h1>Create New Exercise Type!</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
-            <input type="text" placeholder="New Exercise" name="name" ref={register}/>
+            <input class="form-control form-control-lg" type="text" placeholder="New Exercise" name="name" ref={register}/>
             </div>
             <input type="hidden" name="userId" value={localStorage.getItem("app_user_id")} ref={register}/>
             <Button type="submit">Submit</Button>
