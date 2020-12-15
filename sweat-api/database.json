@@ -33,72 +33,6 @@
   ],
   "exerciseLogs": [
     {
-      "exerciseType": "Jumping Jacks",
-      "sets": 10,
-      "weight": 150,
-      "effort": "1 - This was lowest effort possible",
-      "attitude": "g",
-      "workoutTime": 30,
-      "date": "12/14/2020",
-      "userId": 4,
-      "id": 11
-    },
-    {
-      "exerciseType": "David Bing's Crazy exercise",
-      "sets": 10,
-      "weight": 150,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "asdfasf",
-      "workoutTime": 10,
-      "date": "12/14/2020",
-      "userId": 4,
-      "id": 12
-    },
-    {
-      "exerciseType": "Computering",
-      "sets": 10,
-      "weight": 150,
-      "effort": "1 - This was lowest effort possible",
-      "attitude": "asdf",
-      "workoutTime": 30,
-      "date": "12/14/2020",
-      "userId": 3,
-      "id": 13
-    },
-    {
-      "exerciseType": "Vapping",
-      "sets": 30,
-      "weight": 150,
-      "effort": "5 - This was just alright",
-      "attitude": "aslkdfjdslj",
-      "workoutTime": 30,
-      "date": "12/14/2020",
-      "userId": 3,
-      "id": 14
-    },
-    {
-      "exerciseType": "bubba no!",
-      "sets": 10,
-      "weight": 150,
-      "effort": "4 - This was less than average",
-      "attitude": "skodfjslakdfj",
-      "workoutTime": 10,
-      "date": "12/14/2020",
-      "userId": 2,
-      "id": 22
-    },
-    {
-      "exerciseType": "Planks",
-      "sets": 10,
-      "weight": 150,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "Always feeling good!",
-      "workoutTime": 10,
-      "date": "12/14/2020",
-      "userId": 1,
-      "id": 23
-    },
-    {
       "exerciseType": "Keeping it cool!",
       "sets": 10,
       "weight": 100,
@@ -108,69 +42,97 @@
       "date": "12/14/2020",
       "userId": 5,
       "id": 24
-    }
-  ],
-  "exerciseTypes": [
-    {
-      "name": "Pull ups",
-      "userId": 4,
-      "id": 16
     },
     {
-      "name": "David Bing's Crazy exercise",
-      "userId": 4,
-      "id": 22
-    },
-    {
-      "name": "Vapping",
-      "userId": 3,
-      "id": 25
-    },
-    {
-      "name": "Computering",
-      "userId": 3,
+      "exerciseType": "Eating Pizza",
+      "sets": 10,
+      "weight": 500,
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "Was cheezy",
+      "workoutTime": 30,
+      "date": "12/14/2020",
+      "userId": 2,
       "id": 26
     },
     {
-      "name": "New stuff!!!!!",
-      "userId": 4,
+      "exerciseType": "Eating Tacos",
+      "sets": 10,
+      "weight": 500,
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "Tacos was crunchy",
+      "workoutTime": 60,
+      "date": "12/14/2020",
+      "userId": 2,
+      "id": 27
+    },
+    {
+      "exerciseType": "Eating BBQ",
+      "sets": 10,
+      "weight": 500,
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "Pigs was yummy",
+      "workoutTime": 10,
+      "date": "12/14/2020",
+      "userId": 2,
+      "id": 28
+    },
+    {
+      "exerciseType": "Deadlifts",
+      "sets": 10,
+      "weight": 150,
+      "effort": " 10 - Best Effort Possible!",
+      "attitude": "Love me some deadlifts",
+      "workoutTime": 30,
+      "date": "12/14/2020",
+      "userId": 1,
+      "id": 29
+    },
+    {
+      "exerciseType": "Pull Ups",
+      "sets": 10,
+      "weight": 150,
+      "effort": "7 - This was above average",
+      "attitude": "Pull ups were fun!",
+      "workoutTime": 30,
+      "date": "12/14/2020",
+      "userId": 1,
+      "id": 30
+    },
+    {
+      "exerciseType": "Planks",
+      "sets": 10,
+      "weight": 150,
+      "effort": "9 - I felt great!",
+      "attitude": "I planked and was happy to do it!",
+      "workoutTime": 30,
+      "date": "12/14/2020",
+      "userId": 1,
+      "id": 31
+    },
+    {
+      "exerciseType": "Being lazy",
+      "sets": 1,
+      "weight": 200,
+      "effort": "1 - This was lowest effort possible",
+      "attitude": "It was meh",
+      "workoutTime": 60,
+      "date": "12/14/2020",
+      "userId": 3,
       "id": 32
     },
     {
-      "name": "bubba eyah!",
-      "userId": 2,
+      "exerciseType": "Pilates",
+      "sets": 10,
+      "weight": 100,
+      "effort": "9 - I felt great!",
+      "attitude": "Had a great day",
+      "workoutTime": 60,
+      "date": "12/14/2020",
+      "userId": 4,
       "id": 33
-    },
-    {
-      "name": "dont care",
-      "userId": 2,
-      "id": 35
-    },
-    {
-      "name": "Deadlifts",
-      "userId": 1,
-      "id": 37
-    },
-    {
-      "name": "Push Ups",
-      "userId": 1,
-      "id": 38
-    },
-    {
-      "name": "Dips",
-      "userId": 1,
-      "id": 39
-    },
-    {
-      "name": "Squats",
-      "userId": 1,
-      "id": 40
-    },
-    {
-      "name": "Planks",
-      "userId": 1,
-      "id": 41
-    },
+    }
+  ],
+  "exerciseTypes": [
     {
       "name": "Being awesome!",
       "userId": 5,
@@ -187,9 +149,74 @@
       "id": 44
     },
     {
-      "name": "Still submits",
+      "name": "Eating Pizza",
       "userId": 2,
-      "id": 45
+      "id": 47
+    },
+    {
+      "name": "Eating Tacos",
+      "userId": 2,
+      "id": 48
+    },
+    {
+      "name": "Eating BBQ",
+      "userId": 2,
+      "id": 49
+    },
+    {
+      "name": "Planks",
+      "userId": 1,
+      "id": 50
+    },
+    {
+      "name": "Push Ups",
+      "userId": 1,
+      "id": 51
+    },
+    {
+      "name": "Pull Ups",
+      "userId": 1,
+      "id": 52
+    },
+    {
+      "name": "Squats",
+      "userId": 1,
+      "id": 53
+    },
+    {
+      "name": "Deadlifts",
+      "userId": 1,
+      "id": 54
+    },
+    {
+      "name": "Being lazy",
+      "userId": 3,
+      "id": 55
+    },
+    {
+      "name": "Sitting doing nothing",
+      "userId": 3,
+      "id": 56
+    },
+    {
+      "name": "Just Chillin",
+      "userId": 3,
+      "id": 57
+    },
+    {
+      "name": "Pilates",
+      "userId": 4,
+      "id": 58
+    },
+    {
+      "name": "Yoga",
+      "userId": 4,
+      "id": 59
+    },
+    {
+      "name": "Stretching",
+      "userId": 4,
+      "id": 60
     }
   ],
   "effort": [
