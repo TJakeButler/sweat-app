@@ -1,6 +1,7 @@
 import React, { useContext } from "react"
 import { useForm } from "react-hook-form";
 import { ExerciseTypeContext } from "./ExeriseTypeProvider";
+import {Button} from 'reactstrap'
 
 
 
@@ -21,7 +22,7 @@ return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <input type="text" placeholder="New Exercise" name="name" ref={register}/>
             <input type="hidden" name="userId" value={localStorage.getItem("app_user_id")} ref={register}/>
-            <button type="submit">Submit</button>
+            <Button type="submit">Submit</Button>
         </form>
         </>
     )

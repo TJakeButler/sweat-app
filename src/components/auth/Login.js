@@ -1,6 +1,7 @@
 import React, { useRef } from "react"
 import { Link } from "react-router-dom";
 import "./Login.css"
+import {Button} from 'reactstrap'
 
 
 export const Login = props => {
@@ -45,7 +46,7 @@ export const Login = props => {
             </dialog>
             <section>
                 <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Application Name</h1>
+                    <h1>SWEAT App</h1>
                     <h2>Please sign in</h2>
                     <fieldset>
                         <label htmlFor="inputEmail"> Email address </label>
@@ -64,9 +65,9 @@ export const Login = props => {
                             required />
                     </fieldset>
                     <fieldset>
-                        <button type="submit">
+                        <Button type="submit">
                             Sign in
-                        </button>
+                        </Button>
                     </fieldset>
                 </form>
             </section>

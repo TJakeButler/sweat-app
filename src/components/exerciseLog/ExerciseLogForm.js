@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import { ExerciseLogContext } from './ExerciseLogProvider'
 import { EffortContext } from '../effort/EffortProvider'
 import { ExerciseTypeContext } from "../exercise/ExeriseTypeProvider";
+import {Button} from 'reactstrap'
 
 export const ExerciseLogForm = (props) => {
     const { addExerciseLog } = useContext(ExerciseLogContext)
@@ -68,7 +69,7 @@ export const ExerciseLogForm = (props) => {
                 <input type="hidden" value={new Date().toLocaleDateString('en-US')} name="date" ref={register} />
 
                 <input type="hidden" name="userId" value={localStorage.getItem("app_user_id")} ref={register} />
-                <button type="submit">Submit</button>
+                <Button type="submit">Submit</Button>
             </form>
         </>
     )

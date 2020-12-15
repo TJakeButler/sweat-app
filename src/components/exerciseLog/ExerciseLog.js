@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import { ExerciseLogContext } from "./ExerciseLogProvider"
+import {Button} from 'reactstrap'
 
 
 export const ExerciseLog = ({ ExerciseLogObj }) => {
@@ -15,12 +16,12 @@ export const ExerciseLog = ({ ExerciseLogObj }) => {
       <div>Effort: {ExerciseLogObj.effort}</div>
       <div>Minutes:{ExerciseLogObj.workoutTime}</div>
       <div>Date:{ExerciseLogObj.date}</div>
-      <button
+      <Button
         onClick={() => {
           deleteExercise(ExerciseLogObj.id)
 
         }}
-      >Delete Exercise</button>
+      >Delete Exercise</Button>
     </section>
   </>
 }
