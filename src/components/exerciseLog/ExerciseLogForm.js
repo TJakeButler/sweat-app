@@ -38,12 +38,12 @@ export const ExerciseLogForm = (props) => {
     return (
         <>
             <h1>Log your new exercise!</h1>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <select name="exerciseTypeId" placeholder="" ref={register}>
+            <form  onSubmit={handleSubmit(onSubmit)}>
+                <div className="form-group">
+                <select  name="exerciseTypeId" placeholder="" ref={register}>
 
                     <option value="0">---Select Your Exercise Type---</option>
                     {exerciseTypes.map(exerciseTypes => {
-
 
                         if (exerciseTypes.userId === currentlyLoggedInuser) {
                             
@@ -55,9 +55,14 @@ export const ExerciseLogForm = (props) => {
 
 
                 </select>
-
-                <input type="text" placeholder="Sets" name="sets" ref={register} />
+                </div>
+                <div className="form-group">    
+                <input  type="text" placeholder="Sets" name="sets" ref={register} />
+                </div>
+                <div className="form-group">
                 <input type="text" placeholder="Weight" name="weight" ref={register} />
+                </div>
+                <div className="form-group">
                 <select name="effortId" placeholder="" ref={register}>
 
                     <option value="0">---Your effort on a scale 1-10---</option>
@@ -65,9 +70,13 @@ export const ExerciseLogForm = (props) => {
                         {effort.description}
                     </option>))}
                 </select>
-
+                </div>        
+                <div className="form-group">
                 <input type="text" placeholder="Attitude" name="attitude" ref={register} />
+                </div>
+                <div className="form-group">
                 <input type="text" placeholder="Time" name="workoutTime" ref={register} />
+                </div>
                 <input type="hidden" value={new Date().toLocaleDateString('en-US')} name="date" ref={register} />
 
                 <input type="hidden" name="userId" value={localStorage.getItem("app_user_id")} ref={register} />

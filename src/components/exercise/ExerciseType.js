@@ -13,9 +13,7 @@ return <>
 <Button
         onClick={() => {
           deleteExerciseLog(ExerciseTypeObj.id)
-            .then(() => {
-              
-            })
+           
         }}
 >Delete Exercise</Button>
   </section>
