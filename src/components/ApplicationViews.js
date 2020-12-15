@@ -11,6 +11,7 @@ import {ExerciseTypeForm} from './exercise/ExerciseTypeForm'
 import {ExerciseLogForm} from './exerciseLog/ExerciseLogForm'
 import { EffortProvider } from './effort/EffortProvider'
 import { Button } from 'reactstrap'
+import logo from './img/sweatAppLogo.png'
 
 export const ApplicationViews = (props) => {
     return (
@@ -19,6 +20,7 @@ export const ApplicationViews = (props) => {
                 {/* Render the location list when http://localhost:3000/ */}
                 <Route exact path="/">
                     <h1>You're at the Home Page!</h1>
+                    <img src={logo} width="300"></img>
                 </Route>
             
             <ExerciseTypeProvider>

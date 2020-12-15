@@ -50,39 +50,6 @@
       "id": 2
     },
     {
-      "exerciseTypeId": 63,
-      "sets": 10,
-      "weight": 150,
-      "effortId": 8,
-      "attitude": "Was pretty good!",
-      "workoutTime": 40,
-      "date": "12/15/2020",
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "exerciseTypeId": 64,
-      "sets": 1,
-      "weight": 150,
-      "effortId": 2,
-      "attitude": "Didn't really want to today",
-      "workoutTime": 10,
-      "date": "12/15/2020",
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "exerciseTypeId": 64,
-      "sets": 10,
-      "weight": 150,
-      "effortId": 9,
-      "attitude": "great",
-      "workoutTime": 10,
-      "date": "12/15/2020",
-      "userId": 1,
-      "id": 5
-    },
-    {
       "exerciseTypeId": 66,
       "sets": 10,
       "weight": 150,
@@ -103,6 +70,17 @@
       "date": "12/15/2020",
       "userId": 6,
       "id": 7
+    },
+    {
+      "exerciseTypeId": 62,
+      "sets": 20,
+      "weight": 150,
+      "effortId": 10,
+      "attitude": "Amazing",
+      "workoutTime": 30,
+      "date": "12/15/2020",
+      "userId": 1,
+      "id": 8
     }
   ],
   "exerciseTypes": [
@@ -175,16 +153,6 @@
       "name": "Pull Up",
       "userId": 1,
       "id": 62
-    },
-    {
-      "name": "Squat",
-      "userId": 1,
-      "id": 63
-    },
-    {
-      "name": "Jumping Jacks",
-      "userId": 1,
-      "id": 64
     },
     {
       "name": "Burpee",
