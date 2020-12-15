@@ -1,5 +1,6 @@
 import React, { useContext } from "react"
 import {ExerciseTypeContext} from './ExeriseTypeProvider'
+import {Button} from 'reactstrap'
 
 
 export const ExerciseType = ({ ExerciseTypeObj }) => {
@@ -9,14 +10,14 @@ return <>
     <h3>ExerciseType Name:{ExerciseTypeObj.name}</h3>
 <div>ExerciseTypeID:{ExerciseTypeObj.id}</div>
 <div>User ID:{ExerciseTypeObj.userId}</div>
-<button
+<Button
         onClick={() => {
           deleteExerciseLog(ExerciseTypeObj.id)
             .then(() => {
               
             })
         }}
->Delete Exercise</button>
+>Delete Exercise</Button>
   </section>
   </>
 }

@@ -1,5 +1,6 @@
 import React, { useRef } from "react"
 import "./Login.css"
+import {Button} from 'reactstrap'
 
 export const Register = (props) => {
     const firstName = useRef()
@@ -90,7 +91,7 @@ export const Register = (props) => {
                     <input ref={verifyPassword} type="password" name="verifyPassword" className="form-control" placeholder="Verify password" required />
                 </fieldset>
                 <fieldset>
-                    <button type="submit"> Sign in </button>
+                    <Button type="submit"> Sign in </Button>
                 </fieldset>
             </form>
         </main>

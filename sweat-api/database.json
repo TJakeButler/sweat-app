@@ -80,17 +80,6 @@
       "exerciseType": "bubba no!",
       "sets": 10,
       "weight": 150,
-      "effort": "1 - This was lowest effort possible",
-      "attitude": "goakjdg",
-      "workoutTime": 10,
-      "date": "12/14/2020",
-      "userId": 2,
-      "id": 18
-    },
-    {
-      "exerciseType": "bubba no!",
-      "sets": 10,
-      "weight": 150,
       "effort": "4 - This was less than average",
       "attitude": "skodfjslakdfj",
       "workoutTime": 10,
@@ -151,11 +140,6 @@
       "name": "bubba eyah!",
       "userId": 2,
       "id": 33
-    },
-    {
-      "name": "bubba no!",
-      "userId": 2,
-      "id": 34
     },
     {
       "name": "dont care",
