@@ -29,19 +29,69 @@
       "password": "pw",
       "name": "Madi Peper",
       "id": 5
+    },
+    {
+      "email": "jisie@gmail.com",
+      "password": "pw",
+      "name": "Jisie David",
+      "id": 6
     }
   ],
   "exerciseLogs": [
     {
       "exerciseTypeId": 62,
+      "sets": 20,
+      "weight": 150,
+      "effortId": 9,
+      "attitude": "Amazing day!",
+      "workoutTime": 50,
+      "date": "12/15/2020",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "exerciseTypeId": 63,
+      "sets": 10,
+      "weight": 150,
+      "effortId": 8,
+      "attitude": "Was pretty good!",
+      "workoutTime": 40,
+      "date": "12/15/2020",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "exerciseTypeId": 64,
+      "sets": 1,
+      "weight": 150,
+      "effortId": 2,
+      "attitude": "Didn't really want to today",
+      "workoutTime": 10,
+      "date": "12/15/2020",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "exerciseTypeId": 64,
+      "sets": 10,
+      "weight": 150,
+      "effortId": 9,
+      "attitude": "great",
+      "workoutTime": 10,
+      "date": "12/15/2020",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "exerciseTypeId": 65,
       "sets": 10,
       "weight": 150,
       "effortId": 2,
-      "attitude": "aslkdfjsdlj",
-      "workoutTime": 210,
+      "attitude": "Yeah!",
+      "workoutTime": 10,
       "date": "12/15/2020",
-      "userId": 1,
-      "id": 1
+      "userId": 6,
+      "id": 6
     }
   ],
   "exerciseTypes": [
@@ -76,16 +126,6 @@
       "id": 49
     },
     {
-      "name": "Push Ups",
-      "userId": 1,
-      "id": 51
-    },
-    {
-      "name": "Pull Ups",
-      "userId": 1,
-      "id": 52
-    },
-    {
       "name": "Being lazy",
       "userId": 3,
       "id": 55
@@ -116,19 +156,29 @@
       "id": 60
     },
     {
-      "name": "Danny is the man!",
+      "name": "Push Up",
       "userId": 1,
       "id": 61
     },
     {
-      "name": "Power Bomber",
+      "name": "Pull Up",
       "userId": 1,
       "id": 62
     },
     {
-      "name": "NEw NEw",
+      "name": "Squat",
       "userId": 1,
       "id": 63
+    },
+    {
+      "name": "Jumping Jacks",
+      "userId": 1,
+      "id": 64
+    },
+    {
+      "name": "New",
+      "userId": 6,
+      "id": 65
     }
   ],
   "effort": [
