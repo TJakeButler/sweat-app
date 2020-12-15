@@ -83,15 +83,26 @@
       "id": 5
     },
     {
-      "exerciseTypeId": 65,
+      "exerciseTypeId": 66,
       "sets": 10,
       "weight": 150,
-      "effortId": 2,
-      "attitude": "Yeah!",
-      "workoutTime": 10,
+      "effortId": 10,
+      "attitude": "Great!",
+      "workoutTime": 30,
       "date": "12/15/2020",
       "userId": 6,
       "id": 6
+    },
+    {
+      "exerciseTypeId": 67,
+      "sets": 10,
+      "weight": 150,
+      "effortId": 9,
+      "attitude": "Amazing!",
+      "workoutTime": 30,
+      "date": "12/15/2020",
+      "userId": 6,
+      "id": 7
     }
   ],
   "exerciseTypes": [
@@ -176,9 +187,19 @@
       "id": 64
     },
     {
-      "name": "New",
+      "name": "Burpee",
       "userId": 6,
-      "id": 65
+      "id": 66
+    },
+    {
+      "name": "Push Up",
+      "userId": 6,
+      "id": 67
+    },
+    {
+      "name": "Pull Up",
+      "userId": 6,
+      "id": 68
     }
   ],
   "effort": [

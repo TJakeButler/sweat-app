@@ -19,17 +19,8 @@ export const ApplicationViews = (props) => {
                 {/* Render the location list when http://localhost:3000/ */}
                 <Route exact path="/">
                     <h1>You're at the Home Page!</h1>
-                    <Button onClick={() => {
-
-                        localStorage.clear();
-                        props.history.push("/login")
-                        
-                    }
-                        
-                }>Log Out!</Button>
                 </Route>
             
-
             <ExerciseTypeProvider>
                 {/* Render the exerciseTypes list when http://localhost:3000/exerciseTypes */}
                 <Route path="/exerciseTypes">
