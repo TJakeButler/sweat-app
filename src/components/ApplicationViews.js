@@ -37,12 +37,15 @@ export const ApplicationViews = (props) => {
                 </Route>
             </ExerciseTypeProvider>
         
-
+        <ExerciseTypeProvider>
+        <EffortProvider>
         <ExerciseLogProvider>
             <Route path="/exerciseLogs">
                 <ExerciseLogList></ExerciseLogList>
             </Route>
         </ExerciseLogProvider>
+        </EffortProvider>
+        </ExerciseTypeProvider>
 
         <ExerciseTypeProvider>
         <Route path="/newExerciseTypeform">
