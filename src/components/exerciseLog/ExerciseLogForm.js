@@ -28,6 +28,8 @@ export const ExerciseLogForm = (props) => {
         data["sets"] = parseInt(data.sets)
         data["weight"] = parseInt(data.weight)
         data["workoutTime"] = parseInt(data.workoutTime)
+        data["exerciseTypeId"] = parseInt(data.exerciseTypeId)
+        data["effortId"] = parseInt(data.effortId)
         
         addExerciseLog(data).then(() => props.history.push('/exerciseLogs'))
         
@@ -37,7 +39,7 @@ export const ExerciseLogForm = (props) => {
         <>
             <h1>Log your new exercise!</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
-                <select name="exerciseType" placeholder="" ref={register}>
+                <select name="exerciseTypeId" placeholder="" ref={register}>
 
                     <option value="0">---Select Your Exercise Type---</option>
                     {exerciseTypes.map(exerciseTypes => {
@@ -45,7 +47,7 @@ export const ExerciseLogForm = (props) => {
 
                         if (exerciseTypes.userId === currentlyLoggedInuser) {
                             
-                            return (<option key={exerciseTypes.id} value={exerciseTypes.name}>
+                            return (<option key={exerciseTypes.id} value={exerciseTypes.id}>
                                 {exerciseTypes.name}
                             </option>)
                         }
@@ -56,10 +58,10 @@ export const ExerciseLogForm = (props) => {
 
                 <input type="text" placeholder="Sets" name="sets" ref={register} />
                 <input type="text" placeholder="Weight" name="weight" ref={register} />
-                <select name="effort" placeholder="" ref={register}>
+                <select name="effortId" placeholder="" ref={register}>
 
                     <option value="0">---Your effort on a scale 1-10---</option>
-                    {effort.map(effort => (<option key={effort.id} value={effort.description}>
+                    {effort.map(effort => (<option key={effort.id} value={effort.id}>
                         {effort.description}
                     </option>))}
                 </select>

@@ -33,103 +33,15 @@
   ],
   "exerciseLogs": [
     {
-      "exerciseType": "Keeping it cool!",
-      "sets": 10,
-      "weight": 100,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "Amazing",
-      "workoutTime": 60,
-      "date": "12/14/2020",
-      "userId": 5,
-      "id": 24
-    },
-    {
-      "exerciseType": "Eating Pizza",
-      "sets": 10,
-      "weight": 500,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "Was cheezy",
-      "workoutTime": 30,
-      "date": "12/14/2020",
-      "userId": 2,
-      "id": 26
-    },
-    {
-      "exerciseType": "Eating Tacos",
-      "sets": 10,
-      "weight": 500,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "Tacos was crunchy",
-      "workoutTime": 60,
-      "date": "12/14/2020",
-      "userId": 2,
-      "id": 27
-    },
-    {
-      "exerciseType": "Eating BBQ",
-      "sets": 10,
-      "weight": 500,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "Pigs was yummy",
-      "workoutTime": 10,
-      "date": "12/14/2020",
-      "userId": 2,
-      "id": 28
-    },
-    {
-      "exerciseType": "Deadlifts",
+      "exerciseTypeId": 62,
       "sets": 10,
       "weight": 150,
-      "effort": " 10 - Best Effort Possible!",
-      "attitude": "Love me some deadlifts",
-      "workoutTime": 30,
-      "date": "12/14/2020",
+      "effortId": 2,
+      "attitude": "aslkdfjsdlj",
+      "workoutTime": 210,
+      "date": "12/15/2020",
       "userId": 1,
-      "id": 29
-    },
-    {
-      "exerciseType": "Pull Ups",
-      "sets": 10,
-      "weight": 150,
-      "effort": "7 - This was above average",
-      "attitude": "Pull ups were fun!",
-      "workoutTime": 30,
-      "date": "12/14/2020",
-      "userId": 1,
-      "id": 30
-    },
-    {
-      "exerciseType": "Planks",
-      "sets": 10,
-      "weight": 150,
-      "effort": "9 - I felt great!",
-      "attitude": "I planked and was happy to do it!",
-      "workoutTime": 30,
-      "date": "12/14/2020",
-      "userId": 1,
-      "id": 31
-    },
-    {
-      "exerciseType": "Being lazy",
-      "sets": 1,
-      "weight": 200,
-      "effort": "1 - This was lowest effort possible",
-      "attitude": "It was meh",
-      "workoutTime": 60,
-      "date": "12/14/2020",
-      "userId": 3,
-      "id": 32
-    },
-    {
-      "exerciseType": "Pilates",
-      "sets": 10,
-      "weight": 100,
-      "effort": "9 - I felt great!",
-      "attitude": "Had a great day",
-      "workoutTime": 60,
-      "date": "12/14/2020",
-      "userId": 4,
-      "id": 33
+      "id": 1
     }
   ],
   "exerciseTypes": [
@@ -164,11 +76,6 @@
       "id": 49
     },
     {
-      "name": "Planks",
-      "userId": 1,
-      "id": 50
-    },
-    {
       "name": "Push Ups",
       "userId": 1,
       "id": 51
@@ -177,16 +84,6 @@
       "name": "Pull Ups",
       "userId": 1,
       "id": 52
-    },
-    {
-      "name": "Squats",
-      "userId": 1,
-      "id": 53
-    },
-    {
-      "name": "Deadlifts",
-      "userId": 1,
-      "id": 54
     },
     {
       "name": "Being lazy",
@@ -217,6 +114,16 @@
       "name": "Stretching",
       "userId": 4,
       "id": 60
+    },
+    {
+      "name": "Danny is the man!",
+      "userId": 1,
+      "id": 61
+    },
+    {
+      "name": "Power Bomber",
+      "userId": 1,
+      "id": 62
     }
   ],
   "effort": [
