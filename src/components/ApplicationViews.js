@@ -58,10 +58,11 @@ export const ApplicationViews = (props) => {
                     <ExerciseLogProvider >
                         
                         
-                        <Route path="/newExerciseLogform" render={
+                        <Route exact path="/newExerciseLogform" render={
                                 props => <ExerciseLogForm {...props}/>
                             } />
-                        <Route path="/newExerciseLogform/edit/:exerciseLog(\d+)" render={
+
+                        <Route exact path="/newExerciseLogform/edit/:exerciseLog(\d+)" render={
                                 props => <ExerciseLogForm {...props}/>
                             } />
                             

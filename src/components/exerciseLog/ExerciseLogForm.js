@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { useForm } from "react-hook-form";
 import { ExerciseLogContext } from './ExerciseLogProvider'
 import { EffortContext } from '../effort/EffortProvider'
@@ -6,17 +6,30 @@ import { ExerciseTypeContext } from "../exercise/ExeriseTypeProvider";
 import {Button} from 'reactstrap'
 
 export const ExerciseLogForm = (props) => {
-    const { addExerciseLog } = useContext(ExerciseLogContext)
+      // Use the required context providers for data
+    const { exerciseLogs, addExerciseLog, getExerciseLogs, deleteExercise, updateExerciseLog} = useContext(ExerciseLogContext)
     const { effort, getEffort } = useContext(EffortContext)
     const { exerciseTypes, getExerciseTypes } = useContext(ExerciseTypeContext)
+    // Component state
+    const [editLogObj, setEditLogObj] = useState({})
 
-    useEffect(() => {
-        getEffort()
+    // Is there a a URL parameter??
+    const editMode = props.match.params.hasOwnProperty("id")
 
-    }, [])
 
+
+
+
+
+
+
+
+
+    // Get data from API when component initializes
     useEffect(() => {
         getExerciseTypes()
+        .then(getExerciseLogs)
+        .then(getEffort)
        
     }, [])
 
@@ -57,7 +70,7 @@ export const ExerciseLogForm = (props) => {
                 </select>
                 </div>
                 <div className="form-group">    
-                <input class="form-control form-control-lg" type="text" placeholder="Sets" name="sets" ref={register} />
+                <input className="form-control form-control-lg" type="text" placeholder="Sets" name="sets" ref={register} />
                 </div>
                 <div className="form-group">
                 <input class="form-control form-control-lg" type="text" placeholder="Weight" name="weight" ref={register} />
@@ -72,10 +85,10 @@ export const ExerciseLogForm = (props) => {
                 </select>
                 </div>        
                 <div className="form-group">
-                <input class="form-control form-control-lg" type="text" placeholder="Attitude" name="attitude" ref={register} />
+                <input className="form-control form-control-lg" type="text" placeholder="Attitude" name="attitude" ref={register} />
                 </div>
                 <div className="form-group">
-                <input class="form-control form-control-lg" type="text" placeholder="Time" name="workoutTime" ref={register} />
+                <input className="form-control form-control-lg" type="text" placeholder="Time" name="workoutTime" ref={register} />
                 </div>
                 <input  type="hidden" value={new Date().toLocaleDateString('en-US')} name="date" ref={register} />
 

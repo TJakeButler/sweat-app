@@ -13,24 +13,28 @@ export const ExerciseLog = (props) => {
   const { exerciseTypes, getExerciseTypes } = useContext(ExerciseTypeContext)
   let description = ""
   let foundExerciseType = ""
-   
-  const [ExerciseLogObj, setLog] = useState({})
+     // Component state
+  
+     
+  const [ExerciseLogObj, setLogObj] = useState({})
 
-  console.log("This ie exerciseLogOBj", ExerciseLogObj)
-  // console.log("This is props!!!!", props.ExerciseLogObj)
-  // console.log("This is Props alone!!!", props)
+  
+
+    // Is there a a URL parameter??
+    
+  
+
   useEffect(
     () => {
-
-      getEffort()
+      getExerciseLogs()
+      .then(getEffort)
       .then(getExerciseTypes)
-      .then(getExerciseLogs)
-      // console.log(effort)
+      
     },
     []
   )
   
-
+  
   exerciseTypes.find(exerciseType => {
     if (props.ExerciseLogObj.exerciseTypeId === exerciseType.id) {
       foundExerciseType = exerciseType.name
@@ -74,10 +78,10 @@ export const ExerciseLog = (props) => {
           <Button color="primary">Edit Button</Button>
         </Link> */}
         
-          <button onClick={() => {
-              props.history.push(`/newExerciseLogform/edit/${ExerciseLogObj.id}`)
+          <Button color="primary" onClick={() => {
+              props.history.push(`/newExerciseLogform/edit/${props.ExerciseLogObj.id}`)
           }}>Edit
-          </button>
+          </Button>
 
       </section>
     </div>
