@@ -81,6 +81,17 @@
       "date": "12/15/2020",
       "userId": 1,
       "id": 8
+    },
+    {
+      "exerciseTypeId": 47,
+      "sets": 10,
+      "weight": 500,
+      "effortId": 9,
+      "attitude": "I ate it all",
+      "workoutTime": 30,
+      "date": "12/15/2020",
+      "userId": 2,
+      "id": 9
     }
   ],
   "exerciseTypes": [
