@@ -82,6 +82,12 @@ export const ExerciseLog = ({ ExerciseLogObj}) => {
 
         }}
       >Delete Exercise</Button>
+      <Button color="primary"
+        onClick={() => {
+          console.log("Edit Button Clicked")
+
+        }}
+      >Edit Exercise</Button>
     </section>
     </div>
   </>
