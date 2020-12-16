@@ -103,6 +103,17 @@
       "date": "12/16/2020",
       "userId": 1,
       "id": 13
+    },
+    {
+      "exerciseTypeId": 61,
+      "sets": 10,
+      "weight": 150,
+      "effortId": 3,
+      "attitude": "great",
+      "workoutTime": 10,
+      "date": "12/16/2020",
+      "userId": 1,
+      "id": 14
     }
   ],
   "exerciseTypes": [
@@ -195,6 +206,11 @@
       "name": "Please Just work",
       "userId": 1,
       "id": 72
+    },
+    {
+      "name": "Dan workout",
+      "userId": 1,
+      "id": 73
     }
   ],
   "effort": [

@@ -13,17 +13,36 @@ export const ExerciseLogForm = (props) => {
     // Component state
     const [editLogObj, setEditLogObj] = useState({})
 
+
+    console.log(props.location.data)
     // Is there a a URL parameter??
-    const editMode = props.match.params.hasOwnProperty("id")
+    const editMode = props.match.params.hasOwnProperty("exerciseLog")
 
+    const handleControlledInputChange = (event) => {
+        /*
+            When changing a state object or array, always create a new one
+            and change state instead of modifying current one
+        */
+        console.log("********handleControlledInputChange Executes***********")
+        console.log(event.target)
+        console.log("current state variable editLogObj", editLogObj)
+    
+        const newEditLogObj = Object.assign({}, editLogObj)
+        console.log("new object that's a copy of editLogObj state variable", newEditLogObj)
+    
+        newEditLogObj[event.target.name] = event.target.value
+        console.log("newEditLogObj after modification", newEditLogObj)
+    
+        setEditLogObj(newEditLogObj)
+      }
 
-
-
-
-
-
-
-
+      const getLogInEditMode = () => {
+        if (editMode) {
+          const exerciseLogId = parseInt(props.match.params.id)
+          const selectedLog = exerciseLogs.find(el => el.id === exerciseLogId) || {}
+          setEditLogObj(selectedLog)
+        }
+      }
 
     // Get data from API when component initializes
     useEffect(() => {
@@ -32,6 +51,8 @@ export const ExerciseLogForm = (props) => {
         .then(getEffort)
        
     }, [])
+
+
 
     const { register, handleSubmit } = useForm();
     const currentlyLoggedInuser = parseInt(localStorage.getItem("app_user_id"))

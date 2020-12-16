@@ -34,7 +34,7 @@ export const ExerciseLog = (props) => {
     []
   )
   
-  
+  console.log(props.ExerciseLogObj)
   exerciseTypes.find(exerciseType => {
     if (props.ExerciseLogObj.exerciseTypeId === exerciseType.id) {
       foundExerciseType = exerciseType.name
@@ -79,7 +79,12 @@ export const ExerciseLog = (props) => {
         </Link> */}
         
           <Button color="primary" onClick={() => {
-              props.history.push(`/newExerciseLogform/edit/${props.ExerciseLogObj.id}`)
+            
+              props.history.push(
+                {pathname: `/newExerciseLogform/edit/${props.ExerciseLogObj.id}`,
+                data: props.ExerciseLogObj
+              })
+
           }}>Edit
           </Button>
 
