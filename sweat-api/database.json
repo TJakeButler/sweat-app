@@ -39,17 +39,6 @@
   ],
   "exerciseLogs": [
     {
-      "exerciseTypeId": 62,
-      "sets": 20,
-      "weight": 150,
-      "effortId": 9,
-      "attitude": "Amazing day!",
-      "workoutTime": 50,
-      "date": "12/15/2020",
-      "userId": 1,
-      "id": 2
-    },
-    {
       "exerciseTypeId": 66,
       "sets": 10,
       "weight": 150,
@@ -92,6 +81,17 @@
       "date": "12/15/2020",
       "userId": 2,
       "id": 9
+    },
+    {
+      "exerciseTypeId": 69,
+      "sets": 10,
+      "weight": 150,
+      "effortId": 10,
+      "attitude": "I stayed up really late",
+      "workoutTime": 30,
+      "date": "12/16/2020",
+      "userId": 1,
+      "id": 10
     }
   ],
   "exerciseTypes": [
@@ -179,6 +179,11 @@
       "name": "Pull Up",
       "userId": 6,
       "id": 68
+    },
+    {
+      "name": "Staying up late",
+      "userId": 1,
+      "id": 69
     }
   ],
   "effort": [

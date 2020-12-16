@@ -13,6 +13,7 @@ import { ExerciseLogForm } from './exerciseLog/ExerciseLogForm'
 import { EffortProvider } from './effort/EffortProvider'
 import { Button } from 'reactstrap'
 import logo from './img/sweatAppLogo.png'
+import { ExerciseLog } from './exerciseLog/ExerciseLog'
 
 
 export const ApplicationViews = (props) => {
@@ -23,6 +24,7 @@ export const ApplicationViews = (props) => {
             <Route exact path="/">
                 <h1>You're at the Home Page!</h1>
                 <img src={logo} width="300"></img>
+                
             </Route>
 
             <ExerciseTypeProvider>
@@ -35,9 +37,11 @@ export const ApplicationViews = (props) => {
             <ExerciseTypeProvider>
                 <EffortProvider>
                     <ExerciseLogProvider>
-                        <Route path="/exerciseLogs">
-                            <ExerciseLogList {...props} />
-                        </Route>
+                        <Route path="/exerciseLogs" render={
+                            props => <ExerciseLogList {...props} />
+                        } />
+                            
+                        
                     </ExerciseLogProvider>
                 </EffortProvider>
             </ExerciseTypeProvider>
@@ -48,23 +52,28 @@ export const ApplicationViews = (props) => {
                 </Route>
             </ExerciseTypeProvider>
 
-            
+
             <EffortProvider>
                 <ExerciseTypeProvider>
                     <ExerciseLogProvider >
-                        <Route path="/newExerciseLogform">
-                            <ExerciseLogForm {...props} />
-                        </Route>
-                        {/* <Route path="newExerciseLogform" render={
-                            props => <ExerciseLogForm {...props} />
-                        }>
-                        </Route> */}
+                        
+                        
+                        <Route path="/newExerciseLogform" render={
+                                props => <ExerciseLogForm {...props}/>
+                            } />
+                        <Route path="/newExerciseLogform/edit/:exerciseLog(\d+)" render={
+                                props => <ExerciseLogForm {...props}/>
+                            } />
+                            
+                           
+                        
+                        
                     </ExerciseLogProvider>
                 </ExerciseTypeProvider>
             </EffortProvider>
-            
 
-            
+
+
 
 
         </>
