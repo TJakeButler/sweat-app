@@ -4,6 +4,7 @@ import {Button} from 'reactstrap'
 import { EffortContext } from "../effort/EffortProvider"
 import {ExerciseTypeContext, ExerciseTypeProvider} from '../exercise/ExeriseTypeProvider'
 import { ExerciseLogList } from "./ExerciseLogList"
+import {Link} from 'react-router-dom'
 
 
 export const ExerciseLog = ({ ExerciseLogObj}) => {
@@ -82,14 +83,16 @@ export const ExerciseLog = ({ ExerciseLogObj}) => {
 
         }}
       >Delete Exercise</Button>
-      <Button color="primary"
-        onClick={() => {
-          console.log("Edit Button Clicked")
-
-        }}
-      >Edit Exercise</Button>
+      <Link to={'/exerciseLogForm/edit'}>
+        <Button>Edit Button</Button>
+      </Link>
     </section>
     </div>
   </>
 }
 
+{/* <div className="animal__owner">Customer: {customer.name}</div>
+
+<button onClick={() => {
+    props.history.push(`/animals/edit/${animal.id}`)
+}}>Edit</button> */}

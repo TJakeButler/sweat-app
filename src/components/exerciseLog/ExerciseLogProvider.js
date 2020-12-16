@@ -37,9 +37,20 @@ export const ExerciseLogProvider = (props) => {
             .then(getExerciseLogs)
     }
 
+    const updateExerciseLog = exerciseLogId => {
+        return fetch(`http://localhost:8088/exerciseLogs/${exerciseLogId.id}`, {
+            method: "PUT",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(exerciseLogs)
+        })
+            .then(getExerciseLogs)
+    }
+
     return (
         <ExerciseLogContext.Provider value={{
-            exerciseLogs, addExerciseLog, getExerciseLogs, deleteExercise
+            exerciseLogs, addExerciseLog, getExerciseLogs, deleteExercise, updateExerciseLog
         }}>
             {props.children}
         </ExerciseLogContext.Provider>
