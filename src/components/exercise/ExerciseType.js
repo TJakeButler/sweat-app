@@ -1,28 +1,32 @@
 import React, { useContext } from "react"
-import {ExerciseTypeContext} from './ExeriseTypeProvider'
-import {Button} from 'reactstrap'
+import { ExerciseTypeContext } from './ExeriseTypeProvider'
+import { Button } from 'reactstrap'
+import {Link} from 'react-router-dom'
 
 
 export const ExerciseType = ({ ExerciseTypeObj }) => {
-const {deleteExerciseLog} = useContext(ExerciseTypeContext)
-return <>
-<div className="card">
-  <section>
-    <div className="card-header">
-    <h3>ExerciseType Name:{ExerciseTypeObj.name}</h3>
+  const { deleteExerciseLog } = useContext(ExerciseTypeContext)
+  return <>
+    <div className="card">
+      <section>
+        <div className="card-header">
+          <h3>ExerciseType Name:{ExerciseTypeObj.name}</h3>
+        </div>
+        <div className="card-body">
+          <div>ExerciseTypeID:{ExerciseTypeObj.id}</div>
+          <div>User ID:{ExerciseTypeObj.userId}</div>
+        </div>
+        <Button
+          onClick={() => {
+            deleteExerciseLog(ExerciseTypeObj.id)
+
+          }}
+        >Delete Exercise</Button>
+        <Link to={'/exerciseTypeForm/edit'}>
+          <Button color="primary">Edit Button</Button>
+        </Link>
+      </section>
     </div>
-    <div className="card-body">
-<div>ExerciseTypeID:{ExerciseTypeObj.id}</div>
-<div>User ID:{ExerciseTypeObj.userId}</div>
-</div>
-<Button
-        onClick={() => {
-          deleteExerciseLog(ExerciseTypeObj.id)
-           
-        }}
->Delete Exercise</Button>
-  </section>
-  </div>
   </>
 }
 

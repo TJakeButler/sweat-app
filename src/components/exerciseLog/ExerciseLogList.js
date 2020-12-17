@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from "react"
 import { ExerciseLog } from "./ExerciseLog"
 import { ExerciseLogContext } from "./ExerciseLogProvider"
 
-export const ExerciseLogList = () => {
+export const ExerciseLogList = (props) => {
   // This state changes when `getExerciseLogs()` is invoked below
   const { exerciseLogs, getExerciseLogs } = useContext(ExerciseLogContext)
   // currentlyLoggedInuser is setting a variable that holds the value of the currenlty logged in user held in localStorage. // 
@@ -28,7 +28,7 @@ export const ExerciseLogList = () => {
         exerciseLogs.map(singleExerciseLog => {
           if (singleExerciseLog.userId === currentlyLoggedInuser)
 
-            return <ExerciseLog key={singleExerciseLog.id} ExerciseLogObj={singleExerciseLog} />
+            return <ExerciseLog key={singleExerciseLog.id} {...props} ExerciseLogObj={singleExerciseLog} />
         })}
     </>
   )

@@ -66,7 +66,7 @@ export const Example = (props) => {
             </NavItem>
           </Nav>
           <NavbarText>
-          <Button onClick={() => {
+          <Button  color="primary" onClick={() => {
 
 localStorage.clear();
 props.history.push("/login")

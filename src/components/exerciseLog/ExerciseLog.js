@@ -1,95 +1,100 @@
-import React, { useContext, useEffect } from "react"
+import React, { useContext, useEffect, useState } from "react"
 import { ExerciseLogContext } from "./ExerciseLogProvider"
-import {Button} from 'reactstrap'
+import { Button } from 'reactstrap'
 import { EffortContext } from "../effort/EffortProvider"
-import {ExerciseTypeContext, ExerciseTypeProvider} from '../exercise/ExeriseTypeProvider'
+import { ExerciseTypeContext, ExerciseTypeProvider } from '../exercise/ExeriseTypeProvider'
 import { ExerciseLogList } from "./ExerciseLogList"
+import { Link } from 'react-router-dom'
 
 
-export const ExerciseLog = ({ ExerciseLogObj}) => {
-  const { deleteExercise } = useContext(ExerciseLogContext)
-  const {effort, getEffort} = useContext(EffortContext)
-  const {exerciseTypes, getExerciseTypes} = useContext(ExerciseTypeContext)
+export const ExerciseLog = (props) => {
+  const { exerciseLogs, addExerciseLog, getExerciseLogs, deleteExercise, updateExerciseLog } = useContext(ExerciseLogContext)
+  const { effort, getEffort } = useContext(EffortContext)
+  const { exerciseTypes, getExerciseTypes } = useContext(ExerciseTypeContext)
   let description = ""
   let foundExerciseType = ""
-  useEffect(
-    () => {
-      
-      getEffort()
-      console.log(effort)
-    },
-    []
-  )
-  useEffect(
-    () => {
-      
-      console.log(effort)
-    },
-    [effort]
-  )
-  useEffect(
-    () => {
-      
-      getExerciseTypes()
-      console.log(exerciseTypes)
-    },
-    []
-  )
-  useEffect(
-    () => {
-      
-      console.log(exerciseTypes)
-    },
-    [exerciseTypes]
-  )
-
-   exerciseTypes.find(exerciseType => {
-     if (ExerciseLogObj.exerciseTypeId === exerciseType.id) {
-      foundExerciseType = exerciseType.name
-      console.log("This is Found Exercise Type!", foundExerciseType)
-     }
-     
-   })
+     // Component state
   
-  effort.find((effort) => {
-    if (ExerciseLogObj.effortId === effort.id) {
-      console.log(effort)
-      description = effort.description
-      console.log(description)
+     
+  const [ExerciseLogObj, setLogObj] = useState({})
+
+  
+
+    // Is there a a URL parameter??
+    
+  
+
+  useEffect(
+    () => {
+      getExerciseLogs()
+      .then(getEffort)
+      .then(getExerciseTypes)
+      
+    },
+    []
+  )
+  
+  console.log(props.ExerciseLogObj)
+  exerciseTypes.find(exerciseType => {
+    if (props.ExerciseLogObj.exerciseTypeId === exerciseType.id) {
+      foundExerciseType = exerciseType.name
       
     }
-    
+
+  })
+
+  effort.find((effort) => {
+    if (props.ExerciseLogObj.effortId === effort.id) {
+      
+      description = effort.description
+      
+
+    }
+
   })
 
   return <>
-  <div className="card">
-    <section>
-      <div className="card-header">
-      <h3>Exercise Log ID:{ExerciseLogObj.id}</h3>
-      </div>
-      <div className="card-body">
-      <div>UserId:{ExerciseLogObj.userId}</div>
-      <div>ExerciseType:{foundExerciseType}</div>
-      <div>Sets:{ExerciseLogObj.sets}</div>
-      <div>Weight:{ExerciseLogObj.weight}</div>
-      <div>Effort: {description}</div>
-      <div>Minutes:{ExerciseLogObj.workoutTime}</div>
-      <div>Date:{ExerciseLogObj.date}</div>
-      </div>
-      <Button
-        onClick={() => {
-          deleteExercise(ExerciseLogObj.id)
+    <div className="card">
+      <section>
+        <div className="card-header">
+          <h3>Exercise Log ID:{props.ExerciseLogObj.id}</h3>
+        </div>
+        <div className="card-body">
+          <div>UserId:{props.ExerciseLogObj.userId}</div>
+          <div>ExerciseType:{foundExerciseType}</div>
+          <div>Sets:{props.ExerciseLogObj.sets}</div>
+          <div>Weight:{props.ExerciseLogObj.weight}</div>
+          <div>Effort: {description}</div>
+          <div>Minutes:{props.ExerciseLogObj.workoutTime}</div>
+          <div>Date:{props.ExerciseLogObj.date}</div>
+        </div>
+        <Button
+          onClick={() => {
+            deleteExercise(props.ExerciseLogObj.id)
 
-        }}
-      >Delete Exercise</Button>
-      <Button color="primary"
-        onClick={() => {
-          console.log("Edit Button Clicked")
+          }}
+        >Delete Exercise</Button>
+        {/* <Link to={'/newexerciseLogForm/edit:exerciseTypeId(\d+)'}>
+          <Button color="primary">Edit Button</Button>
+        </Link> */}
+        
+          <Button color="primary" onClick={() => {
+            
+              props.history.push(
+                {pathname: `/newExerciseLogform/edit/${props.ExerciseLogObj.id}`,
+                data: props.ExerciseLogObj
+              })
 
-        }}
-      >Edit Exercise</Button>
-    </section>
+          }}>Edit
+          </Button>
+
+      </section>
     </div>
   </>
 }
 
+{/* <div className="animal__owner">Customer: {customer.name}</div>
+
+<button onClick={() => {
+    props.history.push(`/animals/edit/${animal.id}`)
+}}>Edit</button> */}
