@@ -37,15 +37,20 @@ export const ExerciseLogProvider = (props) => {
             .then(getExerciseLogs)
     }
 
-    const updateExerciseLog = exerciseLogId => {
-        return fetch(`http://localhost:8088/exerciseLogs/${exerciseLogId.id}`, {
+    const updateExerciseLog = exerciseLogObj => {
+        
+        
+        console.log(exerciseLogObj)
+
+        console.log(exerciseLogs)
+        return fetch(`http://localhost:8088/exerciseLogs/${exerciseLogObj.id}`, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(exerciseLogs)
+            body: JSON.stringify(exerciseLogObj)
         })
-            .then(getExerciseLogs)
+        .then(getExerciseLogs)
     }
 
     return (

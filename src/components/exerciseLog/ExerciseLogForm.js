@@ -20,6 +20,7 @@ export const ExerciseLogForm = (props) => {
     
     // Is there a a URL parameter??
     const editMode = props.match.params.hasOwnProperty("exerciseLog")
+    
 
 
     const getLogInEditMode = () => {
@@ -27,7 +28,12 @@ export const ExerciseLogForm = (props) => {
           const exerciseLogId = parseInt(props.match.params.exerciseLog)
           const selectedLog = exerciseLogs.find(e => e.id === exerciseLogId) || {}
           setExerciseLogObj(selectedLog)
+
+          console.log(exerciseLogId)
+          console.log(selectedLog)
+          
         }
+        console.log("what we are looking for", exerciseLogObj)
       }
    
 
@@ -42,34 +48,11 @@ export const ExerciseLogForm = (props) => {
      // Once provider state is updated, determine the animal (if edit)
   useEffect(() => {
     getLogInEditMode()
-  }, [exerciseLogs])
+  }, [])
 
 console.log(exerciseLogObj)
 
-// const constructExercise = () => {
-    
-//       if (editMode) {
-//         updateExerciseLog({
-//           id: animal.id,
-//           name: animal.name,
-//           breed: animal.breed,
-//           locationId: locationId,
-//           treatment: animal.treatment,
-//           customerId: parseInt(localStorage.getItem("kennel_customer"))
-//         })
-//           .then(() => props.history.push("/animals"))
-//       } else {
-//         addExerciseLog({
-//           name: animal.name,
-//           breed: animal.breed,
-//           locationId: locationId,
-//           treatment: animal.treatment,
-//           customerId: parseInt(localStorage.getItem("kennel_customer"))
-//         })
-//           .then(() => props.history.push("/animals"))
-//       }
-//     }
-//   }
+
 
 
     const { register, handleSubmit } = useForm();
@@ -82,9 +65,30 @@ console.log(exerciseLogObj)
         data["workoutTime"] = parseInt(data.workoutTime)
         data["exerciseTypeId"] = parseInt(data.exerciseTypeId)
         data["effortId"] = parseInt(data.effortId)
+
+        console.log("DATA**", data)
+        if(editMode) {
+            const editedLogObj = {
+                attitude: data.attitude,
+                date: data.date,
+                effortId: data.effortId,
+                exerciseTypeId: data.exerciseTypeId,
+                id: exerciseLogObj.id,
+                sets: data.sets,
+                userId: data.userId,
+                weight: data.weight,
+                workoutTime: data.workoutTime
+            }
+            updateExerciseLog(editedLogObj)
+            
+            .then(() => props.history.push("/exerciseLogs"))
+        }
+        else{
+
         
+        console.log("add fired")
         addExerciseLog(data).then(() => props.history.push('/exerciseLogs'))
-        
+        }
     }
 
     
@@ -95,7 +99,7 @@ console.log(exerciseLogObj)
             <h1>Log your new exercise!</h1>
             <form  onSubmit={handleSubmit(onSubmit)}>
                 <div className="form-group">
-                <select  name="exerciseTypeId" placeholder="" ref={register} value={exerciseLogObj.exerciseTypeId}> 
+                <select  name="exerciseTypeId" placeholder="" ref={register} defaultValue={exerciseLogObj.exerciseTypeId}> 
 
                     <option value="0">---Select Your Exercise Type---</option>
                     {exerciseTypes.map(exerciseTypes => {
@@ -112,14 +116,14 @@ console.log(exerciseLogObj)
                 </select>
                 </div>
                 <div className="form-group">    
-                <input className="form-control form-control-lg" type="text" placeholder="Sets" name="sets" ref={register}  value={exerciseLogObj.sets}/>
+                <input className="form-control form-control-lg" type="text" placeholder="Sets" name="sets" ref={register}  defaultValue={exerciseLogObj.sets}/>
                 </div>
 
                 <div className="form-group">
-                <input class="form-control form-control-lg" type="text" placeholder="Weight" name="weight" ref={register} value={exerciseLogObj.weight}/>
+                <input class="form-control form-control-lg" type="text" placeholder="Weight" name="weight" ref={register} defaultValue={exerciseLogObj.weight}/>
                 </div>
                 <div className="form-group">
-                <select name="effortId" placeholder="" ref={register} value={exerciseLogObj.effortId} >
+                <select name="effortId" placeholder="" ref={register} defaultValue={exerciseLogObj.effortId} >
 
                     <option value="0">---Your effort on a scale 1-10---</option>
                     {effort.map(effort => (<option key={effort.id} value={effort.id}>
@@ -128,10 +132,10 @@ console.log(exerciseLogObj)
                 </select>
                 </div>        
                 <div className="form-group">
-                <input className="form-control form-control-lg" type="text" placeholder="Attitude" name="attitude" ref={register} value={exerciseLogObj.attitude}/>
+                <input className="form-control form-control-lg" type="text" placeholder="Attitude" name="attitude" ref={register} defaultValue={exerciseLogObj.attitude}/>
                 </div>
                 <div className="form-group">
-                <input className="form-control form-control-lg" type="text" placeholder="Time" name="workoutTime" ref={register} value={exerciseLogObj.workoutTime} />
+                <input className="form-control form-control-lg" type="text" placeholder="Time" name="workoutTime" ref={register} defaultValue={exerciseLogObj.workoutTime} />
                 </div>
                 <input  type="hidden" value={new Date().toLocaleDateString('en-US')} name="date" ref={register} />
 

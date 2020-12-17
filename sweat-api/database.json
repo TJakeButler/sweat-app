@@ -39,194 +39,48 @@
   ],
   "exerciseLogs": [
     {
-      "exerciseTypeId": 66,
-      "sets": 10,
-      "weight": 150,
+      "exerciseTypeId": 4,
+      "sets": 1,
+      "weight": 123,
+      "effortId": 3,
+      "attitude": "sdfasf",
+      "workoutTime": 123123,
+      "date": "12/17/2020",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "attitude": "good",
+      "date": "12/17/2020",
       "effortId": 10,
-      "attitude": "Great!",
-      "workoutTime": 30,
-      "date": "12/15/2020",
-      "userId": 6,
-      "id": 6
-    },
-    {
-      "exerciseTypeId": 67,
-      "sets": 10,
-      "weight": 150,
-      "effortId": 9,
-      "attitude": "Amazing!",
-      "workoutTime": 30,
-      "date": "12/15/2020",
-      "userId": 6,
-      "id": 7
-    },
-    {
-      "exerciseTypeId": 47,
-      "sets": 10,
-      "weight": 500,
-      "effortId": 9,
-      "attitude": "I ate it all",
-      "workoutTime": 30,
-      "date": "12/15/2020",
-      "userId": 2,
-      "id": 9
-    },
-    {
-      "exerciseTypeId": 73,
-      "sets": 10,
-      "weight": 100,
-      "effortId": 4,
-      "attitude": "alskdfjlk",
-      "workoutTime": 30,
-      "date": "12/16/2020",
+      "exerciseTypeId": 5,
+      "id": 2,
+      "sets": 12,
       "userId": 4,
-      "id": 17
-    },
-    {
-      "exerciseTypeId": 70,
-      "sets": 20,
-      "weight": 150,
-      "effortId": 10,
-      "attitude": "YEAH!",
-      "workoutTime": 30,
-      "date": "12/17/2020",
-      "userId": 1,
-      "id": 19
-    },
-    {
-      "exerciseTypeId": 74,
-      "sets": null,
-      "weight": null,
-      "effortId": 0,
-      "attitude": "",
-      "workoutTime": null,
-      "date": "12/17/2020",
-      "userId": 1,
-      "id": 20
-    },
-    {
-      "exerciseTypeId": 74,
-      "sets": 50,
-      "weight": 150,
-      "effortId": 2,
-      "attitude": "aoskdgjk",
-      "workoutTime": 10,
-      "date": "12/17/2020",
-      "userId": 1,
-      "id": 21
-    },
-    {
-      "exerciseTypeId": 70,
-      "sets": 20,
-      "weight": 150,
-      "effortId": 10,
-      "attitude": "YEAH!",
-      "workoutTime": 30,
-      "date": "12/17/2020",
-      "userId": 1,
-      "id": 22
+      "weight": 112,
+      "workoutTime": 12
     }
   ],
   "exerciseTypes": [
     {
-      "name": "Being awesome!",
-      "userId": 5,
-      "id": 42
-    },
-    {
-      "name": "Being the best!",
-      "userId": 5,
-      "id": 43
-    },
-    {
-      "name": "Keeping it cool!",
-      "userId": 5,
-      "id": 44
-    },
-    {
-      "name": "Eating Pizza",
-      "userId": 2,
-      "id": 47
-    },
-    {
-      "name": "Eating Tacos",
-      "userId": 2,
-      "id": 48
-    },
-    {
-      "name": "Eating BBQ",
-      "userId": 2,
-      "id": 49
-    },
-    {
-      "name": "Being lazy",
-      "userId": 3,
-      "id": 55
-    },
-    {
-      "name": "Sitting doing nothing",
-      "userId": 3,
-      "id": 56
-    },
-    {
-      "name": "Just Chillin",
-      "userId": 3,
-      "id": 57
-    },
-    {
-      "name": "Pilates",
-      "userId": 4,
-      "id": 58
-    },
-    {
-      "name": "Yoga",
-      "userId": 4,
-      "id": 59
-    },
-    {
-      "name": "Stretching",
-      "userId": 4,
-      "id": 60
-    },
-    {
-      "name": "Push Up",
+      "name": "Pull ups",
       "userId": 1,
-      "id": 61
-    },
-    {
-      "name": "Burpee",
-      "userId": 6,
-      "id": 66
-    },
-    {
-      "name": "Push Up",
-      "userId": 6,
-      "id": 67
-    },
-    {
-      "name": "Pull Up",
-      "userId": 6,
-      "id": 68
+      "id": 2
     },
     {
       "name": "Squats",
       "userId": 1,
-      "id": 70
+      "id": 3
     },
     {
-      "name": "Pull ups",
+      "name": "asdfasdf",
       "userId": 1,
-      "id": 71
+      "id": 4
     },
     {
-      "name": "Watering the Plants",
+      "name": "Yoga",
       "userId": 4,
-      "id": 73
-    },
-    {
-      "name": "We are doing it!",
-      "userId": 1,
-      "id": 74
+      "id": 5
     }
   ],
   "effort": [

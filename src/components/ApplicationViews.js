@@ -63,7 +63,7 @@ export const ApplicationViews = (props) => {
                             } />
 
                         <Route exact path="/newExerciseLogform/edit/:exerciseLog(\d+)" render={
-                                props => <ExerciseLogForm {...props}/>
+                                props =>   <ExerciseLogForm {...props}/>
                             } />
                             
                            
