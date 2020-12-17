@@ -72,48 +72,59 @@
       "id": 9
     },
     {
-      "exerciseTypeId": 61,
+      "exerciseTypeId": 73,
       "sets": 10,
-      "weight": 150,
-      "effortId": 9,
-      "attitude": "Great",
+      "weight": 100,
+      "effortId": 4,
+      "attitude": "alskdfjlk",
       "workoutTime": 30,
       "date": "12/16/2020",
-      "userId": 1,
-      "id": 11
+      "userId": 4,
+      "id": 17
     },
     {
-      "exerciseTypeId": 71,
-      "sets": 10,
+      "exerciseTypeId": 70,
+      "sets": 20,
       "weight": 150,
-      "effortId": 3,
-      "attitude": "great!",
+      "effortId": 10,
+      "attitude": "YEAH!",
       "workoutTime": 30,
-      "date": "12/16/2020",
+      "date": "12/17/2020",
       "userId": 1,
-      "id": 12
+      "id": 19
     },
     {
-      "exerciseTypeId": 72,
-      "sets": 10,
-      "weight": 150,
-      "effortId": 9,
-      "attitude": "not good",
-      "workoutTime": 10,
-      "date": "12/16/2020",
+      "exerciseTypeId": 74,
+      "sets": null,
+      "weight": null,
+      "effortId": 0,
+      "attitude": "",
+      "workoutTime": null,
+      "date": "12/17/2020",
       "userId": 1,
-      "id": 13
+      "id": 20
     },
     {
-      "exerciseTypeId": 61,
-      "sets": 10,
+      "exerciseTypeId": 74,
+      "sets": 50,
       "weight": 150,
-      "effortId": 3,
-      "attitude": "great",
+      "effortId": 2,
+      "attitude": "aoskdgjk",
       "workoutTime": 10,
-      "date": "12/16/2020",
+      "date": "12/17/2020",
       "userId": 1,
-      "id": 14
+      "id": 21
+    },
+    {
+      "exerciseTypeId": 70,
+      "sets": 20,
+      "weight": 150,
+      "effortId": 10,
+      "attitude": "YEAH!",
+      "workoutTime": 30,
+      "date": "12/17/2020",
+      "userId": 1,
+      "id": 22
     }
   ],
   "exerciseTypes": [
@@ -198,19 +209,24 @@
       "id": 68
     },
     {
-      "name": "Testing Plz dont break",
+      "name": "Squats",
+      "userId": 1,
+      "id": 70
+    },
+    {
+      "name": "Pull ups",
       "userId": 1,
       "id": 71
     },
     {
-      "name": "Please Just work",
-      "userId": 1,
-      "id": 72
+      "name": "Watering the Plants",
+      "userId": 4,
+      "id": 73
     },
     {
-      "name": "Dan workout",
+      "name": "We are doing it!",
       "userId": 1,
-      "id": 73
+      "id": 74
     }
   ],
   "effort": [
