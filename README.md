@@ -81,10 +81,6 @@ json-server -p 8088 -w database.json
 * [React](https://reactjs.org/) - A JavaScript library for building user interfaces
 * [React Bootstrap](https://react-bootstrap.github.io/) - The most popular front-end framework Rebuilt for React.
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## Version Control
 
