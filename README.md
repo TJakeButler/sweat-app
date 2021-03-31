@@ -1,5 +1,7 @@
 # SWEAT App
 
+[Demo of my App](https://www.youtube.com/watch?v=In74il21HcQ)
+
 SWEAT App is a fully CRUD application created to help users keep track of their exercise activities. I created this app because when I first started my fitness journey I did not have a log of my exercises to help keep me motivated and able to appreciate what I had already accomplished. This app is for anyone beginners or advanced that just want a simple app to keep them on track. SWEAT is an acronym and stands for Sets, Weight, Effort, Attitude, and Time. These are the five variables that this app tracks
 
 ## Getting Started
